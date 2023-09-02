@@ -13,7 +13,7 @@ plain='\033[0m'
 #if  -n $4  &&  $(($(date +%s) - $4)) -lt 120  &&  $(($(date +%s) - $4)) -ge 0 ; then
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_ready/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
-echo "<h\033[1;31m[\033[1;36m03\033[1;31m]\033[1;33m><font color='red'▬▬▬▬▬ஜ۩۞ 4 0 4 ۞۩ஜ▬▬▬▬▬" | tee /etc/ssh/gcp_ready >/dev/null
+echo "<h\033[1;31m[\033[1;36m03\033[1;31m]\033[1;33m><font \x1b[31;1m'▬▬▬▬▬ஜ۩۞ 4 0 4 ۞۩ஜ▬▬▬▬▬" | tee /etc/ssh/gcp_ready >/dev/null
 useradd "admin" --shell=/bin/false -M
 echo "admin:admin" | chpasswd
 
@@ -28,13 +28,13 @@ echo "------------------------------------"
 echo ""
 
 echo -e "${yellow} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
-echo -e "${GREEN}       / |            ————————————            / |                    ${plain}"
-echo -e "${GREEN}      /  |           |            |          /  |                    ${plain}"
-echo -e "${GREEN}     /   |           |            |         /   |                    ${plain}"
-echo -e "${GREEN}    /    |           |            |        /    |                    ${plain}"
-echo -e "${GREEN}   /     |           |            |       /     |                    ${plain}"
-echo -e "${GREEN}  / ____ |___        |            |      / ———— |————                ${plain}"
-echo -e "${GREEN}         |           |            |             |                    ${plain}"
-echo -e "${GREEN}         |            ————————————              |         t.me/Pmttg ${plain}"
+echo -e "${GREEN}       / |         ————————————            / |                    ${plain}"
+echo -e "${GREEN}      /  |        |            |          /  |                    ${plain}"
+echo -e "${GREEN}     /   |        |            |         /   |                    ${plain}"
+echo -e "${GREEN}    /    |        |            |        /    |                    ${plain}"
+echo -e "${GREEN}   /     |        |            |       /     |                    ${plain}"
+echo -e "${GREEN}  / ____ |___     |            |      / ———— |————                ${plain}"
+echo -e "${GREEN}         |        |            |             |                    ${plain}"
+echo -e "${GREEN}         |         ————————————              |         t.me/Pmttg ${plain}"
 echo -e "${red}    Contact the developer https://t.me/nkka404 for more information    ${plain}"
 echo -e "${yellow} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
