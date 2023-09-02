@@ -8,7 +8,7 @@ plain='\033[0m'
 # $1: username, $2: password, $3: message, $4: token
 
 # check root
- $EUID -ne 0  && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
+# $EUID -ne 0  && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
 
 #if  -n $4  &&  $(($(date +%s) - $4)) -lt 120  &&  $(($(date +%s) - $4)) -ge 0 ; then
 
@@ -18,7 +18,7 @@ useradd "admin" --shell=/bin/false -M
 echo "admin:admin" | chpasswd
 
 #else
-#  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/kaungkhantx for more information.${plain}"
+#  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
 #fi
 
 echo ""
