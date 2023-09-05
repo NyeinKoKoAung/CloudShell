@@ -120,17 +120,17 @@ try:
     ips, ssss = ss.split(' -- PROJECT_ID')
     user,ip = ips.split('@')
 
-echo -e "${yellow} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
-echo -e "${GREEN}       / |         ————————————            / |                    ${plain}"
-echo -e "${GREEN}      /  |        |            |          /  |                    ${plain}"
-echo -e "${GREEN}     /   |        |            |         /   |                    ${plain}"
-echo -e "${GREEN}    /    |        |            |        /    |                    ${plain}"
-echo -e "${GREEN}   /     |        | t.me/Pmttg |       /     |                    ${plain}"
-echo -e "${GREEN}  / ____ |___     |            |      / ———— |————                ${plain}"
-echo -e "${GREEN}         |        |            |             |                    ${plain}"
-echo -e "${GREEN}         |         ————————————              |                    ${plain}"
-echo -e "${red}    Contact the developer https://t.me/nkka404 for more information    ${plain}"
-echo -e "${yellow} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
+print(" ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ")
+print("       / |         ————————————            / |                    ")
+print("      /  |        |            |          /  |                    ")
+print("     /   |        |            |         /   |                    ")
+print("    /    |        |            |        /    |                    ")
+print("   /     |        | t.me/Pmttg |       /     |                    ")
+print("  / ____ |___     |            |      / ———— |————                ")
+print("         |        |            |             |                    ")
+print("         |         ————————————              |                    ")
+print("    Contact the developer https://t.me/nkka404 for more information    ")
+print(" ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ")
 
     print("Here is Current INFO")
 
