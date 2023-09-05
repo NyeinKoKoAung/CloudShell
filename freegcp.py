@@ -1,8 +1,13 @@
 import subprocess
 import sys
-#import wget
+import wget
 import os.path
 import requests
+
+red='\x1b[31;1m'
+yellow='\x1b[33;1m'
+green='\x1b[32;1m'
+plain='\033[0m'
 
 def duckdns_update(domains, token, ip, verbose=False):
     """Update duckdns.org Dynamic DNS record.
@@ -30,8 +35,8 @@ token = "5cb287b4-9f3b-4e9c-858d-384f15be2819"
 domain = "modsbots.duckdns.org"
 
 def download_key():
-    #url_pub = "https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine.pub"
-    #url_prv = "https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine"
+    #url_pub = "https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine.pub"
+    #url_prv = "https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine"
     pub = '/.ssh/google_compute_engine.pub'
     prv = '/.ssh/google_compute_engine'
     loc = '/.ssh'
@@ -49,8 +54,8 @@ def download_key():
          sys.exit(1)
     
     try:
-        down = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine.pub']) 
-        down2 = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/modbots/key_pair/main/google_compute_engine' ]) 
+        down = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine.pub']) 
+        down2 = subprocess.run(['sudo', 'wget', 'https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine' ]) 
     except:
         pass
     subprocess.run(['sudo', 'mv', 'google_compute_engine.pub', '.ssh/' ])
@@ -141,7 +146,7 @@ echo -e "${yellow} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 
     print(ip + ":6000")
 
-    print("username = modsbots")
+    print("username = nyeinkoko")
     duckdns_update(domain, token, ip)
 
 except:
