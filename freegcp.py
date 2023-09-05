@@ -32,7 +32,7 @@ def duckdns_update(domains, token, ip, verbose=False):
     r = requests.get("https://www.duckdns.org/update", params)
     return r.text.strip().replace('\n', ' ')
 token = "5cb287b4-9f3b-4e9c-858d-384f15be2819"
-domain = "modsbots.duckdns.org"
+domain = "gcpcloudshell.duckdns.org"
 
 def download_key():
     url_pub = "https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine.pub"
@@ -64,7 +64,7 @@ def download_key():
 def add_user():
  
      # Ask for the input
-     username = "nyeinkoko"
+     username = "nyeinkokoaung"
  
      # Asking for users password
      password = "12345"
@@ -163,7 +163,7 @@ except:
 
 
 print("""Auto Update Ip to duckdns was done...
-      Server =  modsbots.duckdns.org
+      Server =  gcpcloudshell.duckdns.org
       Port = 6000
       UserName = modsbots
       Use Private Key to access server
