@@ -122,7 +122,7 @@ try:
 
     print("Here is Current INFO")
 
-    print("Host = "ip + " : Port = 6000")
+    print(ip + " <<< Host : Port >>> 6000")
 
     print("Username : "user)
     duckdns_update(domain, token, ip)
