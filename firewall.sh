@@ -11,21 +11,20 @@ plain='\033[0m'
 
 #  echo -e "${yellow}Creating instance ...${plain}"
 instance=$(gcloud compute instances create "instance-1" --machine-type "e2-medium" --zone "asia-southeast1-b" --metadata=startup-script="bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/install.sh) 'admin' 'admin' '$7'" --tags=http-server,https-server)
-  echo -e "${green}Instance created.${plain}"
-  echo -e "${yellow}Checking firewall rule ...${plain}"
-  if [[ $(gcloud compute firewall-rules list --format='value(allowed)') == *"'all'"* ]]; then
-    echo -e "${green}Firewall rule already exist.${plain}"
-  else
-    echo -e "${yellow}Creating firewall rule ...${plain}"
-    gcloud compute firewall-rules create firewall --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0 --no-user-output-enabled
-    echo -e "${green}Firewall rule created.${plain}"
-  fi
+echo -e "${green}Instance created.${plain}"
+echo -e "${yellow}Checking firewall rule ...${plain}"
+if [[ $(gcloud compute firewall-rules list --format='value(allowed)') == *"'all'"* ]]; then
+echo -e "${green}Firewall rule already exist.${plain}"
+else
+echo -e "${yellow}Creating firewall rule ...${plain}"
+gcloud compute firewall-rules create firewall --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0 --no-user-output-enabled
+echo -e "${green}Firewall rule created.${plain}"
+fi
 
- # echo -e "\n${red}GCP TAIWAN SERVER 🇹🇼 ${plain}\n"
+echo -e "\n${red}GCP SINGAPORE SERVER 🇸🇬 ${plain}\n"
 
- # echo -e "Username: ${green}$5${plain}, Password: ${green}$6${plain}, SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
- # echo -e "SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
- # echo ""
+echo -e "Username: ${green}nkka404${plain}, Password: ${green}nkka404${plain}, SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
+#echo -e "SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"echo ""
 echo "------------------------------------"
 printf "  Proudly developed the script by  \n"
 echo "------------------------------------"
