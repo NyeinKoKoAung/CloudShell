@@ -4,11 +4,6 @@ import wget
 import os.path
 import requests
 
-red='\x1b[31;1m'
-yellow='\x1b[33;1m'
-green='\x1b[32;1m'
-plain='\033[0m'
-
 def duckdns_update(domains, token, ip, verbose=False):
     """Update duckdns.org Dynamic DNS record.
 
@@ -124,11 +119,6 @@ words, ss = re.split('=no ')
 try:
     ips, ssss = ss.split(' -- PROJECT_ID')
     user,ip = ips.split('@')
-
-echo "------------------------------------"
-printf "  Proudly developed the script by  \n"
-echo "------------------------------------"
-echo ""
 
 echo -e "${yellow} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
 echo -e "${GREEN}       / |         ————————————            / |                    ${plain}"
