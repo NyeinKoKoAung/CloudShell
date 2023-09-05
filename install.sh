@@ -14,8 +14,8 @@ plain='\033[0m'
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "▬▬▬▬▬ஜ۩۞ 4 0 4 ۞۩ஜ▬▬▬▬▬" | tee /etc/ssh/sshd_config >/dev/null
-useradd "nkka404" --shell=/bin/false -M
-echo "nkka404:nkka404" | chpasswd
+useradd "nyeinkokoaung" --shell=/bin/false -M
+echo "nyeinkokoaung:nyeinkokoaung404" | chpasswd
 
 #else
 #  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
