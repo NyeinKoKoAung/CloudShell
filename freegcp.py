@@ -120,18 +120,6 @@ try:
     ips, ssss = ss.split(' -- PROJECT_ID')
     user,ip = ips.split('@')
 
-print(" ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ")
-print("       / |         ————————————            / |                    ")
-print("      /  |        |            |          /  |                    ")
-print("     /   |        |            |         /   |                    ")
-print("    /    |        |            |        /    |                    ")
-print("   /     |        | t.me/Pmttg |       /     |                    ")
-print("  / ____ |___     |            |      / ———— |————                ")
-print("         |        |            |             |                    ")
-print("         |         ————————————              |                    ")
-print("    Contact the developer https://t.me/nkka404 for more information    ")
-print(" ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ")
-
     print("Here is Current INFO")
 
     print("Host = "ip + " : Port = 6000")
