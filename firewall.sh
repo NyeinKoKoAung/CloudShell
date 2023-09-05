@@ -10,9 +10,8 @@ plain='\033[0m'
 #if [[ -n cluster-404-m ]] && [[ $2 == e2-standard-4 ]] && [[ -n asia-southeast1-b ]] && [[ -n firewall ]] && [[ -n 404 ]] && [[ $(($(date +%s) - 404)) -lt 120 ]] && [[ $(($(date +%s) - 404)) -ge 0 ]]; then
 
 #  echo -e "${yellow}Creating instance ...${plain}"
-#  instance=$(gcloud dataproc clusters create cluster-404 --enable-component-gateway --region asia-east1 --zone asia-east1-b --single-node --master-machine-type e2-standard-4 --master-boot-disk-size 500 --image-version 2.0-ubuntu18)
-#  echo -e "${green}Instance created.${plain}"
-
+instance=$(gcloud compute instances create "instance-1" --machine-type "e2-medium" --zone "asia-southeast1-b" --metadata=startup-script="bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/install.sh) 'admin' 'admin' '$7'" --tags=http-server,https-server)
+  echo -e "${green}Instance created.${plain}"
   echo -e "${yellow}Checking firewall rule ...${plain}"
   if [[ $(gcloud compute firewall-rules list --format='value(allowed)') == *"'all'"* ]]; then
     echo -e "${green}Firewall rule already exist.${plain}"
