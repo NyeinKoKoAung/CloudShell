@@ -135,7 +135,7 @@ except:
 
       print(ip + ":6000")
 
-      print("username = nyeinkoko")
+      print("username = "user)
       duckdns_update(domain, token, ip)
 
 
@@ -143,9 +143,11 @@ except:
 print("""Auto Update Ip to duckdns was done...
       Server =  gcpcloudshell.duckdns.org
       Port = 6000
-      UserName = modsbots
+      UserName = nyeinkokoaung
       Use Private Key to access server
       
       """)
+print("🌺***Private Key***🌺")
+print("https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine")
 
 print ("FREE GCP By 4 0 4 😎")
