@@ -124,7 +124,7 @@ try:
 
     print(ip + " <<< Host : Port >>> 6000")
 
-    print("Username : "user)
+    print("nyeinkokoaung")
     duckdns_update(domain, token, ip)
 
 except:
