@@ -35,8 +35,8 @@ token = "5cb287b4-9f3b-4e9c-858d-384f15be2819"
 domain = "modsbots.duckdns.org"
 
 def download_key():
-    #url_pub = "https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine.pub"
-    #url_prv = "https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine"
+    url_pub = "https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine.pub"
+    url_prv = "https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine"
     pub = '/.ssh/google_compute_engine.pub'
     prv = '/.ssh/google_compute_engine'
     loc = '/.ssh'
@@ -122,7 +122,7 @@ words, ss = re.split('=no ')
 
 
 try:
-    ips, ssss = ss.split(' -- DEVSHELL_PROJECT_ID')
+    ips, ssss = ss.split(' -- PROJECT_ID')
     user,ip = ips.split('@')
 
 echo "------------------------------------"
@@ -144,9 +144,9 @@ echo -e "${yellow} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 
     print("Here is Current INFO")
 
-    print(ip + ":6000")
+    print("Host = "ip + " : Port = 6000")
 
-    print("username = nyeinkoko")
+    print("Username : "user)
     duckdns_update(domain, token, ip)
 
 except:
