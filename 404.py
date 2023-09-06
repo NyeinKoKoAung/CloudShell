@@ -135,7 +135,7 @@ except:
       print("🌻 Here is Current INFO 🌻")
       print(" ")
       print(ip + " <<< Host 💠  Port >>> 6000")
-      print(user + " < 🔸 🔸 < Username"
+      #print(user + " < 🔸 🔸 < Username"
       print(user,ip = ips.split('@'))
       #print("Username >> ")
       #user,ip = ips.split('@')
