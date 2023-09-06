@@ -91,10 +91,10 @@ def run_wget():
      try:
          # executing useradd command using subprocess module
          subprocess.run(['pip3', 'install', 'wget'])
-         print('Installing Wget Moldule Done')
+         print('Installing....Wget Moldule Done✅')
          
      except:
-         print(f"Wget Already Installed.")                    
+         print(f"Wget Already Installed.🦋")                    
          sys.exit(1)
 
 try:
@@ -125,7 +125,7 @@ try:
     print(ip + " <<< Host : Port >>> 6000")
     print(user + " <<< Username")
     #user,ip = ips.split('@')
-    print("nyeinkokoaung")
+    #print("nyeinkokoaung")
     duckdns_update(domain, token, ip)
 
 except:
@@ -141,14 +141,12 @@ except:
       duckdns_update(domain, token, ip)
 
 
-
-print("""Auto Update Ip to duckdns was done...
-      Server =  gcpcloudshell.duckdns.org
-      Port = 6000
-      UserName = nyeinkokoaung
-      Use Private Key to access server
-      
-      """)
+print("Auto Update Ip to duckdns was done...✅")
+print("Server Host =  gcpcloudshell.duckdns.org")
+print("Server Port =  6000")
+print("Server User =  nyeinkokoaung")
+print(" ")
+print("🔻🔻Use Private Key to access server🔻🔻")
 print("💠💠💠Private Key💠💠💠")
 print("▬▬▬▬▬ஜ۩۞ 404 ۞۩ஜ▬▬▬▬▬")
 print("https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine")
