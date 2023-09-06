@@ -135,7 +135,7 @@ except:
 
       print(ip + ":6000")
 
-      print("username = "user,ip = ips.split('@'))
+      print("Username >> ") user,ip = ips.split('@')
       duckdns_update(domain, token, ip)
 
 
