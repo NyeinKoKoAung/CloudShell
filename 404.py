@@ -134,8 +134,8 @@ except:
 
       print("🌻 Here is Current INFO 🌻")
       print(" ")
-      print("Host▬"ip + ":Port▬6000")
-      print(user + " ▬ Username")
+      print("Host-") print(ip + ":Port-6000")
+      print(user + "-Username")
       #print("Username >> ")
       #user,ip = ips.split('@')
       duckdns_update(domain, token, ip)
