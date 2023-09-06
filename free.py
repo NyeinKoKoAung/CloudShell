@@ -150,8 +150,8 @@ print("""Auto Update Ip to duckdns was done...
       
       """)
 print("💠💠💠Private Key💠💠💠")
-print("")
+print("▬▬▬▬▬ஜ۩۞ 404 ۞۩ஜ▬▬▬▬▬")
 print("https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine")
-print(" ")
-print ("FREE GCP By 4 0 4 😎")
+print("▬▬▬▬▬ஜ۩۞ 404 ۞۩ஜ▬▬▬▬▬")
+print ("FREE GCP By ۩۞ 404 ۞۩ 😎")
 print(" ")
