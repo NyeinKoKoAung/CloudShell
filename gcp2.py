@@ -123,7 +123,8 @@ try:
     print("Here is Current INFO")
 
     print(ip + " <<< Host : Port >>> 6000")
-
+    print(user + " <<< Username")
+    #user,ip = ips.split('@')
     print("nyeinkokoaung")
     duckdns_update(domain, token, ip)
 
@@ -136,7 +137,7 @@ except:
       print(ip + ":6000")
 
       #print("Username >> ")
-      user,ip = ips.split('@')
+      #user,ip = ips.split('@')
       duckdns_update(domain, token, ip)
 
 
@@ -148,7 +149,9 @@ print("""Auto Update Ip to duckdns was done...
       Use Private Key to access server
       
       """)
-print("🌺***Private Key***🌺")
+print("💠💠💠Private Key💠💠💠")
+print(" ")
 print("https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine")
-
+print(" ")
 print ("FREE GCP By 4 0 4 😎")
+print(" ")
