@@ -121,7 +121,7 @@ try:
     user,ip = ips.split('@')
 
 #print("◈─────⪧ SSH ACCOUNT ⪦─────◈")
-print("PROJECT_ID  :⪧  " + ssss)
+#print("PROJECT_ID  :⪧  " + ssss)
 print("Host / IP   :⪧  " + ip)
 print("SSH Port    :⪧  6000")
 print("Username    :⪧  " + user)
@@ -136,7 +136,7 @@ except:
 
 print("◈─────⪧ SSH ACCOUNT ⪦─────◈")
 
-print("PROJECT_ID  :⪧  " + ssss)
+#print("PROJECT_ID  :⪧  " + ssss)
 print("Host / IP   :⪧  " + ip)
 print("SSH Port    :⪧  6000")
 print("Username    :⪧  " + user)
