@@ -120,15 +120,12 @@ try:
     ips, ssss = ss.split(' -- PROJECT_ID')
     user,ip = ips.split('@')
 
-#print("◈─────⪧ SSH ACCOUNT ⪦─────◈")
-#print("PROJECT_ID  :⪧  " + ssss)
-print("Host / IP   :⪧  " + ip)
-print("SSH Port    :⪧  6000")
-print("Username    :⪧  " + user)
-#print("PROJECT_ID  :⪧  " + ssss)
-#user,ip = ips.split('@')
-#print("nyeinkokoaung404")
-duckdns_update(domain, token, ip)
+    print("Here is Current INFO")
+
+    print(ip + " <<< Host : Port >>> 6000")
+
+    print("nyeinkokoaung404")
+    duckdns_update(domain, token, ip)
 
 except:
       ips, ssss = ss.split(' --')
