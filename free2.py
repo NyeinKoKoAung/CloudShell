@@ -134,9 +134,9 @@ except:
 
 print("◈─────⪧ SSH ACCOUNT ⪦─────◈")
 print(" ")
-print(ip - "Host / IP   :⪧  ")
+print("Host / IP   :⪧  " + ip)
 print("SSH Port    :⪧  6000")
-print(user - "Username    :⪧  ")
+print("Username    :⪧  " + user)
 #print("Host / IP   :⪧  fourzerofour.duckdns.org")
 #print("SSH Port    :⪧  6000")
 #print("Username    :⪧  nyeinkokoaung404")
