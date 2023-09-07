@@ -36,10 +36,10 @@ def download_key():
     prv = '/.ssh/google_compute_engine'
     loc = '/.ssh'
 
-    #if os.path.exists(pub):
-    #    os.remove(pub)bd268
-    #if os.path.exists(prv):
-    #    os.remove(prv)
+    if os.path.exists(pub):
+        os.remove(pub)bd268
+    if os.path.exists(prv):
+        os.remove(prv)
     try:
          # executing useradd command using subprocess module
          subprocess.run(['sudo', 'rm', '-rf', '/.ssh/google_compute_engine.pub' ])  
@@ -152,19 +152,18 @@ print(" ")
 print(" 💠 💠 💠 Private Key 💠 💠 💠")
 print("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ")
 print("https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/google_compute_engine")
-print("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
+print("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
 print(" ")
-print ("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
-print ("       / |         ————————————            / |                    ")
-print ("      /  |        |            |          /  |                    ")
-print ("     /   |        |            |         /   |                    ")
-print ("    /    |        |            |        /    |                    ")
-print ("   /     |        | t.me/Pmttg |       /     |                    ")
-print ("  / ____ |___     |            |      / ———— |————                ")
-print ("         |        |            |             |                    ")
-print ("         |         ————————————              |                    ")
-print ("    Contact the developer https://t.me/nkka404 for more information    ")
-print ("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
-print ("FREE GCP By 4 0 4 😎")
-print ("Credit to ModsBots")
+print("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
+print(" ___   ___          ________          ___   ___                            ")
+print("|\  \ |\  \        |\   __  \        |\  \ |\  \                           ")
+print("\ \  \\_\  \       \ \  \|\  \       \ \  \\_\  \                          ")
+print(" \ \______  \       \ \  \\\  \       \ \______  \                         ")
+print("  \|_____|\  \       \ \  \\\  \       \|_____|\  \                        ")
+print("         \ \__\       \ \_______\             \ \__\                       ")
+print("          \|__|        \|_______|              \|__|                       ")
+print("Contact the developer https://t.me/nkka404 for more information            ")
+print("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
+print ("FREE GCP By Four Zero Four 😎")
+print ("Credit to ModsBots 🌺")
 print(" ")
