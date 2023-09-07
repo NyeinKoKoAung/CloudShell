@@ -13,7 +13,7 @@ plain='\033[0m'
 #if [[ -n $4 ]] && [[ $(($(date +%s) - $4)) -lt 120 ]] && [[ $(($(date +%s) - $4)) -ge 0 ]]; then
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_ready/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
-echo "▬▬▬▬▬ஜ۩۞ I am 404 ۞۩ஜ▬▬▬▬▬" | tee /etc/ssh/gcp_ready >/dev/null
+echo "✩░▒▓▆▅▃▂▁𝐈 𝐚𝐦 𝟒𝟎𝟒▁▂▃▅▆▓▒░✩" | tee /etc/ssh/gcp_ready >/dev/null
 useradd "nkka404" --shell=/bin/false -M
 echo "nkka404:nkka404" | chpasswd
 
