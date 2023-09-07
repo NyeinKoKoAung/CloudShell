@@ -10,7 +10,7 @@ plain='\033[0m'
 #if [[ -n cluster-404-m ]] && [[ $2 == e2-standard-4 ]] && [[ -n asia-southeast1-b ]] && [[ -n firewall ]] && [[ -n 404 ]] && [[ $(($(date +%s) - 404)) -lt 120 ]] && [[ $(($(date +%s) - 404)) -ge 0 ]]; then
 
 #  echo -e "${yellow}Creating instance ...${plain}"
-instance=$(gcloud compute instances create "instance-1" --machine-type "e2-medium" --zone "asia-southeast1-b" --metadata=startup-script="bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/install.sh) 'admin' 'admin' '$7'" --tags=http-server,https-server)
+instance=$(gcloud compute instances create "instance-1" --machine-type "e2-medium" --zone "asia-southeast1-b" --metadata=startup-script="bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/install.sh) 'nkka404' 'nkka404' '▬▬▬▬▬ஜ۩۞404۞۩ஜ▬▬▬▬▬'" --tags=http-server,https-server)
 echo -e "${green}Instance created.${plain}"
 echo -e "${yellow}Checking firewall rule ...${plain}"
 if [[ $(gcloud compute firewall-rules list --format='value(allowed)') == *"'all'"* ]]; then
