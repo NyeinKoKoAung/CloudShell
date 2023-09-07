@@ -8,12 +8,19 @@ plain='\033[0m'
 # $1: username, $2: password, $3: message, $4: token
 
 # check root
-# $EUID -ne 0  && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
+[[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
 
-#if  -n $4  &&  $(($(date +%s) - $4)) -lt 120  &&  $(($(date +%s) - $4)) -ge 0 ; then
+#if [[ -n $4 ]] && [[ $(($(date +%s) - $4)) -lt 120 ]] && [[ $(($(date +%s) - $4)) -ge 0 ]]; then
 
-sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
-echo "▬▬▬▬▬ஜ۩۞ 4 0 4 ۞۩ஜ▬▬▬▬▬" | tee /etc/ssh/sshd_config >/dev/null
+sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_ready/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
+echo "<h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
+</font></h3>
+<h3><font color='#F535AA'>--- ۩ SERVER BY Ob-C-L ۩ ---
+</font></h3>
+h3><font color='#F535AA'>Telegram Channel >> https://t.me/Pmttg
+</font></h3>
+<h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
+</font></h3>" | tee /etc/ssh/gcp_ready >/dev/null
 useradd "obcl" --shell=/bin/false -M
 echo "obcl:obcl" | chpasswd
 
