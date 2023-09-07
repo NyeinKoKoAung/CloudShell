@@ -36,11 +36,11 @@ def download_key():
     prv = '/.ssh/google_compute_engine'
     loc = '/.ssh'
 
-    if os.path.exists(pub):
-        os.remove(pub)bd268
-    if os.path.exists(prv):
-        os.remove(prv)
-    try:
+    #if os.path.exists(pub):
+    #    os.remove(pub)bd268
+    #if os.path.exists(prv):
+    #    os.remove(prv)
+    #try:
          # executing useradd command using subprocess module
          subprocess.run(['sudo', 'rm', '-rf', '/.ssh/google_compute_engine.pub' ])  
          subprocess.run(['sudo', 'rm', '-rf', '/.ssh/google_compute_engine' ])     
