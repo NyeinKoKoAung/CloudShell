@@ -20,9 +20,9 @@ echo "<h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>
 <h3><font color='#f27401'>--- ۩ SERVER BY 404 ۩ ---
 </font></h3>
-<h2><font color='#F535AA'>Telegram Channel >> https://t.me/Pmttg
+<h4><font color='#F535AA'>Telegram Channel >> https://t.me/Pmttg
 </font></h3>
-<h2><font color='#F535AA'>Telegram Channel >> https://t.me/nkka_404
+<h4><font color='#F535AA'>Telegram Channel >> https://t.me/nkka_404
 </font></h3>
 <h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
