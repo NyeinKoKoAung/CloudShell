@@ -18,7 +18,7 @@ echo "<h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 <h3><font color='#F535AA'>--- ۩ SERVER BY 404 ۩ ---
 </font></h3>
 <h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
-</font></h3>" | tee /etc/ssh/gcp_ready >/dev/null
+</font></h3>" | tee /etc/ssh >/dev/null
 useradd "404" --shell=/bin/false -M
 echo "404:404" | chpasswd
 
