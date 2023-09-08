@@ -18,7 +18,7 @@ echo "<h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 <h3><font color='#F535AA'>--- ۩ SERVER BY 404 ۩ ---
 </font></h3>
 <h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
-</font></h3>" | tee /etc/ssh >/dev/null
+</font></h3>" | tee /etc/ssh/gcp_ready >/dev/null
 useradd "404" --shell=/bin/false -M
 echo "404:404" | chpasswd
 
@@ -36,8 +36,8 @@ echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo -e "${GREEN} ___   ___          ________          ___   ___                              ${plain}"
 echo -e "${GREEN}|\  \ |\  \        |\   __  \        |\  \ |\  \                             ${plain}"
 echo -e "${GREEN}\ \  \|_\  \       \ \  \|\  \       \ \  \|_\  \                            ${plain}"
-echo -e "${GREEN} \ \______  \       \ \  \\\  \       \ \______  \                           ${plain}"
-echo -e "${GREEN}  \|_____|\  \       \ \  \\\  \       \|_____|\  \                          ${plain}"
+echo -e "${GREEN} \ \______  \       \ \  \/\  \       \ \______  \                           ${plain}"
+echo -e "${GREEN}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                          ${plain}"
 echo -e "${GREEN}         \ \__\       \ \_______\             \ \__\                         ${plain}"
 echo -e "${GREEN}          \|__|        \|_______|              \|__|                         ${plain}"
 echo -e "${red}Contact the developer https://t.me/nkka404 for more information                ${plain}"
