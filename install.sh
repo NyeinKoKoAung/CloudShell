@@ -15,12 +15,32 @@ plain='\033[0m'
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_ready/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "<h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>
-<h3><font color='#F535AA'>--- ۩ SERVER BY 404 ۩ ---
+<h3><font color='#F535AA'>G
+</font></h3><h3><font color='#F535AA'>C
+</font></h3><h3><font color='#F535AA'>P
+</font></h3> <h3><font color='#F535AA'>P
+</font></h3><h3><font color='#F535AA'>R
+</font></h3><h3><font color='#F535AA'>E
+</font></h3><h3><font color='#F535AA'M
+</font></h3><h3><font color='#F535AA'>I
+</font></h3><h3><font color='#F535AA'>U
+</font></h3><h3><font color='#F535AA'>M
+</font></h3> <h3><font color='#F535AA'>S
+</font></h3><h3><font color='#F535AA'>E
+</font></h3><h3><font color='#F535AA'>R
+</font></h3><h3><font color='#F535AA'>V
+</font></h3><h3><font color='#F535AA'>E
+</font></h3><h3><font color='#F535AA'>R
+</font></h3> <h3><font color='#F535AA'>B
+</font></h3><h3><font color='#F535AA'>Y
+</font></h3> <h3><font color='#F535AA'>4
+</font></h3> <h3><font color='#F535AA'>0
+</font></h3> <h3><font color='#F535AA'>4
 </font></h3>
 <h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_ready >/dev/null
-useradd "404" --shell=/bin/false -M
-echo "404:404" | chpasswd
+useradd "nkka404" --shell=/bin/false -M
+echo "nkka404:nkka404" | chpasswd
 
 #else
 #  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
