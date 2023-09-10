@@ -7,7 +7,7 @@ plain='\033[0m'
 
 red='\e[31m'
 yellow='\e[33m'
-#gray='\e[90m'
+gray='\e[90m'
 green='\e[92m'
 blue='\e[94m'
 #magenta='\e[95m'
@@ -21,7 +21,7 @@ echo "<h3><font color='#D50000'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
 </font></h3>
 <h3><font color='#f40125'>--- ۩ PREMIUM SERVER ۩ ---
 </font></h3>
-<h3><font color='#f27401'>--- ۩ SERVER BY 404 ۩ ---
+<h3><font color='#f27401'>--- ۩ SERVER BY ④ ⍤⃝🌻④ ۩ ---
 </font></h3>
 <h4><font color='#F535AA'>Telegram Channel >> https://t.me/Pmttg
 </font></h4>
@@ -36,16 +36,17 @@ echo ""
 echo "------------------------------------"
 printf "Developed the script by"
 echo "------------------------------------"
-echo -e "${cyan}i am 404 😎 ${plain}"
 echo ""
 
 echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
-echo -e "${blue} ___   ___          ________          ___   ___                              ${plain}"
-echo -e "${blue}|\  \ |\  \        |\   __  \        |\  \ |\  \                             ${plain}"
-echo -e "${blue}\ \  \|_\  \       \ \  \|\  \       \ \  \|_\  \                            ${plain}"
-echo -e "${blue} \ \______  \       \ \  \/\  \       \ \______  \                           ${plain}"
-echo -e "${blue}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                          ${plain}"
-echo -e "${blue}         \ \__\       \ \_______\             \ \__\                         ${plain}"
-echo -e "${blue}          \|__|        \|_______|              \|__|                         ${plain}"
-echo -e "${green}Contact the developer https://t.me/nkka404 for more information                ${plain}"
+echo -e "${cyan} ___   ___          ________          ___   ___                               ${plain}"
+echo -e "${cyan}|\  \ |\  \        |\   __  \        |\  \ |\  \                              ${plain}"
+echo -e "${cyan}\ \  \|_\  \       \ \  \|\  \       \ \  \|_\  \                             ${plain}"
+echo -e "${cyan} \ \______  \       \ \  \/\  \       \ \______  \                            ${plain}"
+echo -e "${cyan}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                           ${plain}"
+echo -e "${cyan}         \ \__\       \ \_______\             \ \__\                          ${plain}"
+echo -e "${cyan}          \|__|        \|_______|              \|__|                          ${plain}"
+echo -e "${green}Contact the developer https://t.me/nkka404 for more information              ${plain}"
 echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
+
+echo -e "${cyan}i am 404 😎 ${plain}"
