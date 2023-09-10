@@ -10,6 +10,7 @@ blue='\e[94m'
 magenta='\e[95m'
 cyan='\e[96m'
 none='\e[0m'
+#red='\e[31m'
 # Font Size
 # h6 = SMALL , h4 = AVERAGE , h3 = LARGE
 # Check Root
@@ -31,7 +32,15 @@ echo "
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
 useradd "404" --shell=/bin/false -M
 echo "404:404" | chpasswd
-
+echo ""
+echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
+echo ""
+echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP"
+echo -e "\033[1;32m◈ SSH Port	   :⪧  \033[1;31m22"
+echo -e "\033[1;32m◈ Username    :⪧  \033[1;31m$username"
+echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$password"
+#echo -e "\033[1;32m◈ Login Limit :⪧  \033[1;31m$gui"
+#echo -e "\033[1;32m◈ Expire Date :⪧  \033[1;31m$sshlimiter"
 echo ""
 echo "------------------------------------"
 printf "Developed the script by \n"
