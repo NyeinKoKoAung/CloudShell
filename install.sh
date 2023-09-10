@@ -10,16 +10,17 @@ yellow='\e[33m'
 gray='\e[90m'
 green='\e[92m'
 blue='\e[94m'
-#magenta='\e[95m'
+magenta='\e[95m'
 cyan='\e[96m'
 none='\e[0m'
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
-echo "<h3><font color='#D50000'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
+echo "
+<h3><font color='red'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
 </font></h3>
-<h3><font color='#f40125'>--- ۩ PREMIUM SERVER ۩ ---
+<h3><font color='magenta'>--- ۩ PREMIUM SERVER ۩ ---
 </font></h3>
 <h3><font color='#f27401'>--- ۩ SERVER BY ④ ⍤⃝🌻④ ۩ ---
 </font></h3>
@@ -27,7 +28,7 @@ echo "<h3><font color='#D50000'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
 </font></h4>
 <h4><font color='#E65100'>Telegram Channel >> https://t.me/nkka_404
 </font></h4>
-<h3><font color='#D50000'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
+<h3><font color='red'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
 useradd "404" --shell=/bin/false -M
 echo "404:404" | chpasswd
