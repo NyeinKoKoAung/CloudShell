@@ -1,7 +1,7 @@
 #!/bin/bash
 
 plain='\033[0m'
-
+IP=$(cat /etc/IP)
 red='\e[31m'
 yellow='\e[33m'
 gray='\e[90m'
