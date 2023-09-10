@@ -22,7 +22,7 @@ echo "
 </font></h3>
 <h3><font color='magenta'>--- ۩ PREMIUM SERVER ۩ ---
 </font></h3>
-<h3><font color='#f27401'><background-color='#454B1B'>--- ۩ SERVER BY ④ ⍤⃝🌻④ ۩ ---
+<h3><font color='#f27401'>--- ۩ SERVER BY ④ ⍤⃝🌻④ ۩ ---
 </font></h3>
 <h4><font color='#F535AA'>Telegram Channel >> https://t.me/Pmttg
 </font></h4>
@@ -35,7 +35,7 @@ echo "404:404" | chpasswd
 
 echo ""
 echo "------------------------------------"
-printf "Developed the script by"
+printf "Developed the script by \n"
 echo "------------------------------------"
 echo ""
 
