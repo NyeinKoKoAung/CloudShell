@@ -27,7 +27,12 @@ echo "obcl:obcl" | chpasswd
 #else
 #  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
 #fi
+print("◈─────⪧ SSH ACCOUNT ⪦─────◈")
 
+echo -e "${yellow}Host / IP   :⪧  your instance${plain}"
+echo -e "${yellow}SSH Port    :⪧  22${plain}"
+echo -e "${yellow}Username    :⪧  obcl${plain}"
+echo -e "${yellow}Password    :⪧  obcl${plain}"
 echo ""
 echo "------------------------------------"
 printf "  Proudly developed the script by  \n"
