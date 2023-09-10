@@ -17,7 +17,7 @@ echo "<h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>
 <h3><font color='#F535AA'>--- ۩ SERVER BY Ob-C-L ۩ ---
 </font></h3>
-h3><font color='#F535AA'>Telegram Channel >> https://t.me/Pmttg
+<h3><font color='#FF7F00'>Telegram Channel >> https://t.me/Pmttg
 </font></h3>
 <h3><font color='red'>▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_ready >/dev/null
