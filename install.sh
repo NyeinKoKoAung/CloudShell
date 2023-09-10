@@ -1,10 +1,18 @@
 #!/bin/bash
 
-red='\x1b[31;1m'
-yellow='\x1b[33;1m'
-green='\x1b[32;1m'
+#red='\x1b[31;1m'
+#yellow='\x1b[33;1m'
+#green='\x1b[32;1m'
 plain='\033[0m'
 
+red='\e[31m'
+yellow='\e[33m'
+gray='\e[90m'
+green='\e[92m'
+blue='\e[94m'
+#magenta='\e[95m'
+cyan='\e[96m'
+none='\e[0m'
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
 
@@ -31,12 +39,12 @@ echo "------------------------------------"
 echo ""
 
 echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
-echo -e "${GREEN} ___   ___          ________          ___   ___                              ${plain}"
-echo -e "${GREEN}|\  \ |\  \        |\   __  \        |\  \ |\  \                             ${plain}"
-echo -e "${GREEN}\ \  \|_\  \       \ \  \|\  \       \ \  \|_\  \                            ${plain}"
-echo -e "${GREEN} \ \______  \       \ \  \/\  \       \ \______  \                           ${plain}"
-echo -e "${GREEN}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                          ${plain}"
-echo -e "${GREEN}         \ \__\       \ \_______\             \ \__\                         ${plain}"
-echo -e "${GREEN}          \|__|        \|_______|              \|__|                         ${plain}"
+echo -e "${gray} ___   ___          ________          ___   ___                              ${plain}"
+echo -e "${gray}|\  \ |\  \        |\   __  \        |\  \ |\  \                             ${plain}"
+echo -e "${gray}\ \  \|_\  \       \ \  \|\  \       \ \  \|_\  \                            ${plain}"
+echo -e "${gray} \ \______  \       \ \  \/\  \       \ \______  \                           ${plain}"
+echo -e "${gray}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                          ${plain}"
+echo -e "${gray}         \ \__\       \ \_______\             \ \__\                         ${plain}"
+echo -e "${gray}          \|__|        \|_______|              \|__|                         ${plain}"
 echo -e "${red}Contact the developer https://t.me/nkka404 for more information                ${plain}"
 echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
