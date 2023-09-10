@@ -21,8 +21,8 @@ echo "<h3><font color='#D50000'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
 </font></h4>
 <h3><font color='#D50000'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
-useradd "nkka404" --shell=/bin/false -M
-echo "nkka404:nkka404" | chpasswd
+useradd "404" --shell=/bin/false -M
+echo "404" | chpasswd
 
 echo ""
 echo "------------------------------------"
