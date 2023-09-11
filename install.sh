@@ -17,20 +17,16 @@ none='\e[0m'
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "
+<h1><font color='#F535AA'><h3><h1 style="text-align: center;"><big><big><strong>Hello..🦋 </big></big></big></span><p style="text-align: center;"><br /><p style="text-align: center;">
+</font></h1>
 <h3><font color='red'>
-▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬
+▬▬▬▬▬▬▬▬۩4▪0▪4۩▬▬▬▬▬▬▬▬
 </font></h3>
-<h6><font color='magenta'>
-___   ___        ________       ___   ___     
-|\  \ |\  \      |\   __  \     |\  \ |\  \    
-\ \  \|_\  \     \ \  \|\  \    \ \  \|_\  \   
- \ \______  \     \ \  \/\  \    \ \______  \  
-  \|_____|\  \     \ \  \/\  \    \|_____|\  \ 
-         \ \__\     \ \_______\          \ \__\
-          \|__|      \|_______|           \|__|
-</font></h6>
+<h3><font color='magenta'>
+↤↤↤↤↤ Server by 4▪0▪4 ↦↦↦↦↦
+</font></h3>
 <h3><font color='red'>
-▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬
+▬▬▬▬▬▬▬▬۩4▪0▪4۩▬▬▬▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
 useradd "404" --shell=/bin/false -M
 echo "404:404" | chpasswd
