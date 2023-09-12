@@ -1,6 +1,7 @@
 #!/bin/bash
 
 IP=$(cat /etc/IP)
+IP2=$(curl -H "i-am-404" http://metadata/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip)
 plain='\033[0m'
 
 #စာလုံးအရောင်းများ
@@ -47,7 +48,8 @@ echo -e "\033[1;32m◈ Username    :⪧  \033[1;31m$username"
 echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$password"
 echo ""
 echo -e "\033[1;37m◈────⪧ ✿ ✿ 4▪0▪4 ✿ ✿ ⪦────◈"
-
+echo ""
+echo -e "\033[1;32m◈ Host / IP(For Cloud Shell)   :⪧  \033[1;31m$IP2"
 echo ""
 echo "------------------------------------"
 printf "Developed the script by \n"
