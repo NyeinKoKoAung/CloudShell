@@ -20,21 +20,9 @@ echo "
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>
-<h3><font color='cyan'>
+<h6><font color='cyan'>
 ↤↤↤↤↤ GCP TAIWAN SERVER🇹🇼 ↦↦↦↦↦
-</font></h3>
-<h3><font color='magenta'>
- ___ ___ ___ 
-</font></h3>
-<h3><font color='magenta'>
-|   |  |      |   |  |
-</font></h3>
-<h3><font color='magenta'>
-|_    |   |  |_    |
-</font></h3>
-<h3><font color='magenta'>
-   | _|___|   |_|
-</font></h3>
+</font></h6>
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
