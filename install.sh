@@ -36,7 +36,7 @@ echo "
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
 #useradd "404" --shell=/bin/false -M
 useradd -e 404 -M -s /bin/false -p $password $username >/dev/null
-echo "$password" >/etc/ssh/sshd_config/$username
+echo "$password"# >/etc/ssh/sshd_config/$username
 echo "$username" >>/root/usuarios.db
 echo "$username:$password" | chpasswd
 
@@ -49,7 +49,7 @@ echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$password"
 echo ""
 echo -e "\033[1;37m◈────⪧ ✿ ✿ 4▪0▪4 ✿ ✿ ⪦────◈"
 echo ""
-echo -e "\033[1;32m◈ Host / IP(For Cloud Shell)   :⪧  \033[1;31m$IP2"
+echo -e "\033[1;32m◈ Host/IP-For Cloud Shell   :⪧  \033[1;31m$IP2"
 echo ""
 echo "------------------------------------"
 printf "Developed the script by \n"
