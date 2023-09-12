@@ -26,7 +26,9 @@ echo "
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
-useradd "404" --shell=/bin/false -M
+#useradd "404" --shell=/bin/false -M
+useradd -e 404 -M -s /bin/false -p 404 404 >/dev/null
+echo "404"# >>/root/usuarios.db
 echo "404:404" | chpasswd
 
 echo ""
