@@ -1,5 +1,6 @@
 #!/bin/bash
 
+IP=$(cat /etc/IP)
 plain='\033[0m'
 
 red='\e[31m'
@@ -10,8 +11,10 @@ blue='\e[94m'
 magenta='\e[95m'
 cyan='\e[96m'
 none='\e[0m'
-# Font Size
-# h6 = SMALL , h4 = AVERAGE , h3 = LARGE
+username="404"
+password="404"
+# Font Size(Server message အရွယ်အသား)
+# h6 = စာလုံးအသေး , h4 = စာလုံးအလတ် , h3 = စာလုံးအကြီး
 # Check Root
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
 
@@ -30,6 +33,15 @@ echo "
 useradd -e 404 -M -s /bin/false -p 404 404 >/dev/null
 echo "404"# >>/root/usuarios.db
 echo "404:404" | chpasswd
+
+echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
+echo ""
+echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP"
+echo -e "\033[1;32m◈ Port        :⪧  \033[1;31m22"
+echo -e "\033[1;32m◈ Username    :⪧  \033[1;31m$username"
+echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$password"
+echo ""
+echo -e "\033[1;37m◈─────⪧ ✿✿4▪0▪4✿✿ ⪦─────◈"
 
 echo ""
 echo "------------------------------------"
