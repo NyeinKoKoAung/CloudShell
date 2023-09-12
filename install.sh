@@ -36,7 +36,7 @@ echo "
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
 #useradd "404" --shell=/bin/false -M
 useradd -e 404 -M -s /bin/false -p $password $username >/dev/null
-echo "$password"# >/etc/ssh/sshd_config/$username
+#echo "$password" >/etc/ssh/sshd_config/$username
 echo "$username" >>/root/usuarios.db
 echo "$username:$password" | chpasswd
 
