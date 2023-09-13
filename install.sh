@@ -49,10 +49,10 @@ useradd -e $final -M -s /bin/false -p $password $username >/dev/null #2>&1 &
 #echo "$password" >/etc/ssh/sshd_config/$username
 echo "$username" >>/root/usuarios.db
 echo "$username:$password" | chpasswd
-
+IP=$(wget -qO- ipv4.icanhazip.com)
 echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
 echo ""
-echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31mIP 🥵"
+echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP"
 echo -e "\033[1;32m◈ Port        :⪧  \033[1;31m22"
 echo -e "\033[1;32m◈ Username    :⪧  \033[1;31m$username"
 echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$password"
