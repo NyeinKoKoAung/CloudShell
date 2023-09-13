@@ -1,18 +1,16 @@
 #!/bin/bash
 
-#IP=$(cat /etc/IP)
-#IP2=$(curl -H "i-am-404" http://metadata/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip)
 plain='\033[0m'
 dias="2"
 
-#စာလုံးအရောင်းများ
-red='\e[31m'    #အနီ
-yellow='\e[33m' #အဝါ
-gray='\e[90m'   #
+#စာလုံးအရောင်များ(Server Message)
+red='\e[31m'    #အနီရောင်
+yellow='\e[33m' #အဝါရောင်
+gray='\e[90m'   #မီးခိုးရောင်
 green='\e[92m'  #အစိမ်း
-blue='\e[94m'   #
-magenta='\e[95m'#
-cyan='\e[96m'   #
+blue='\e[94m'   #အပြာရောင်
+magenta='\e[95m'#ပန်းခရမ်းရောင်
+cyan='\e[96m'   #စိမ်းပြာရောင်
 none='\e[0m'    #အရောင်မရှိ
 
 #Username နှင့် Password ပြောင်းရန်
@@ -22,11 +20,11 @@ password="nkka"
 #SSH User Limit သတ်မှတ်ရန်
 sshlimiter="300"
 
-#ဒါက ဖင်ယားလို့ထည့်ထားတာ 🥵
-final=$(date "+%Y-%m-%d" -d "+$dias days")
-gui=$(date "+%d/%m/%Y" -d "+$dias days")
-
-#Server Message 💠
+#💠 Server Message ပြင်ရန်💠
+#Server-message အရွယ်အစား သတ်မှတ်ချက်
+# h6 သည် = စာလုံးအသေး ဖြစ်သည်
+# h4 သည် = စာလုံးအလတ် ဖြစ်သည်
+# h3 သည် = စာလုံးအကြီး  ဖြစ်သည်
 servermessage="<h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>
@@ -36,19 +34,21 @@ servermessage="<h3><font color='red'>
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>"
-#Font Size(Server message အရွယ်အစား)
-# h6 = စာလုံးအသေး , h4 = စာလုံးအလတ် , h3 = စာလုံးအကြီး
-
+#End
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "$servermessage" | tee /etc/ssh/gcp_404 >/dev/null
+#ဒါက xင်ယားလို့ထည့်ထားတာ 🥵
+final=$(date "+%Y-%m-%d" -d "+$dias days")
+gui=$(date "+%d/%m/%Y" -d "+$dias days")
+pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 #useradd "$username" --shell=/bin/false -M
-useradd -e $final -M -s /bin/false -p $password $username >/dev/null #2>&1 &
+useradd -e $final -M -s /bin/false -p $pass $username >/dev/null 2>&1 &
 #echo "$password" >/etc/VPSManager/senha/$username
 #echo "$password" >/etc/ssh/sshd_config/$username
-echo "$username" >>/root/usuarios.db
 echo "$username:$password" | chpasswd
+echo "$username $sshlimiter" >>/root/usuarios.db
 IP=$(wget -qO- ipv4.icanhazip.com)
 echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
 echo ""
