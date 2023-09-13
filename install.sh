@@ -44,9 +44,10 @@ final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
 pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 #useradd "$username" --shell=/bin/false -M
-useradd -e $final -M -s /bin/false -p $pass $username >/dev/null 2>&1 &
+useradd -e $final -M -s /bin/false -p $pass $username >/dev/null #2>&1 &
 #echo "$password" >/etc/VPSManager/senha/$username
 #echo "$password" >/etc/ssh/sshd_config/$username
+echo "$password" >/etc/$username
 echo "$username:$password" | chpasswd
 echo "$username $sshlimiter" >>/root/usuarios.db
 IP=$(wget -qO- ipv4.icanhazip.com)
