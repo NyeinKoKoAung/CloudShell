@@ -44,7 +44,7 @@ servermessage="<h3><font color='red'>
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "$servermessage" | tee /etc/ssh/gcp_404 >/dev/null
 #useradd "$username" --shell=/bin/false -M
-useradd -e $final -M -s /bin/false -p $password $username >/dev/null# 2>&1 &
+useradd -e $final -M -s /bin/false -p $password $username >/dev/null #2>&1 &
 #echo "$password" >/etc/VPSManager/senha/$username
 #echo "$password" >/etc/ssh/sshd_config/$username
 echo "$username" >>/root/usuarios.db
