@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IP=$(cat /etc/IP)
-IP2=$(curl -H "i-am-404" http://metadata/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip)
+#IP2=$(curl -H "i-am-404" http://metadata/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip)
 plain='\033[0m'
 
 #စာလုံးအရောင်းများ
@@ -37,7 +37,7 @@ echo "
 #useradd "404" --shell=/bin/false -M
 useradd -e 404 -M -s /bin/false -p $password $username >/dev/null
 #echo "$password" >/etc/ssh/sshd_config/$username
-echo "$username" >>/root/usuarios.db
+#echo "$username" >>/root/usuarios.db
 echo "$username:$password" | chpasswd
 
 echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
@@ -48,9 +48,9 @@ echo -e "\033[1;32m◈ Username    :⪧  \033[1;31m$username"
 echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$password"
 echo ""
 echo -e "\033[1;37m◈────⪧ ✿ ✿ 4▪0▪4 ✿ ✿ ⪦────◈"
-echo ""
-echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP2\e[33m(For Cloud Shell)"
-echo ""
+#echo ""
+#echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP2\e[33m(For Cloud Shell)"
+#echo ""
 echo "------------------------------------"
 printf "Developed the script by \n"
 echo "------------------------------------"
