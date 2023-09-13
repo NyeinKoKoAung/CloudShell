@@ -3,23 +3,28 @@
 #IP=$(cat /etc/IP)
 #IP2=$(curl -H "i-am-404" http://metadata/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip)
 plain='\033[0m'
-final=$(date "+%Y-%m-%d)
-gui=$(date "+%d/%m/%Y")
+dias="2"
+
 #စာလုံးအရောင်းများ
-red='\e[31m'
-yellow='\e[33m'
-gray='\e[90m'
-green='\e[92m'
-blue='\e[94m'
-magenta='\e[95m'
-cyan='\e[96m'
-none='\e[0m'
+red='\e[31m'    #အနီ
+yellow='\e[33m' #အဝါ
+gray='\e[90m'   #
+green='\e[92m'  #အစိမ်း
+blue='\e[94m'   #
+magenta='\e[95m'#
+cyan='\e[96m'   #
+none='\e[0m'    #အရောင်မရှိ
 
 #Username နှင့် Password ပြောင်းရန်
 username="404"
 password="404"
+
 #SSH User Limit သတ်မှတ်ရန်
 sshlimiter="300"
+
+#ဒါက ဖင်ယားလို့ထည့်ထားတာ 🥵
+final=$(date "+%Y-%m-%d" -d "+$dias days")
+gui=$(date "+%d/%m/%Y" -d "+$dias days")
 
 #Font Size(Server message အရွယ်အစား)
 # h6 = စာလုံးအသေး , h4 = စာလုံးအလတ် , h3 = စာလုံးအကြီး
