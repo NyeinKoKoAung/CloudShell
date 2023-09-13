@@ -28,7 +28,7 @@ echo "
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>
-<h4><font color='cyan'><h1 style='text-align: center;'>
+<h4><font color='cyan'><style='text-align:center'>
 ↤↤↤↤↤ GCP SERVER BY ④ ⍤⃝✿④ ↦↦↦↦↦
 </font></h4>
 <h3><font color='red'>
@@ -49,7 +49,7 @@ echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$password"
 echo ""
 echo -e "\033[1;37m◈────⪧ ✿ ✿ 4▪0▪4 ✿ ✿ ⪦────◈"
 echo ""
-echo -e "\033[1;32m◈ Host/IP-For Cloud Shell   :⪧  \033[1;31m$IP2"
+echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP2+(For Cloud Shell)"
 echo ""
 echo "------------------------------------"
 printf "Developed the script by \n"
