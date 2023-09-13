@@ -30,20 +30,20 @@ dias="2"
 servermessage="<h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>
-<h4><font color='#F5FE00'><style='text-align:center'>
+<h4><font color='#F5FE00'>
 ↤↤↤↤↤  ۩ PREMIUM SEVER ۩ ↦↦↦↦↦
 </font></h4>
-<h4><font color='#E51369'><style='text-align:center'>
-🦋 🦋 TERM OF SERVICE 🦋 🦋
+<h4><font color='#E51369'>
+◈─────⪧ IMPORTANT ⪦──────◈
 </font></h4>
-<h4><font color='#20CDCC'><style='text-align:center'>
-NO SPAM
+<h4><font color='magenta'>
+         NO SPAM           
 </font></h4>
-<h4><font color='#10C7E5'><style='text-align:center'>
-NO DDOS
+<h4><font color='green'>
+         NO DDOS           
 </font></h4>
-<h4><font color='#00C1FF'><style='text-align:center'>
-NO HACKING AND CARDING
+<h4><font color='#00C1FF'>
+  NO HACKING AND CARDING   
 </font></h4>
 <h4><font color='cyan'>
 Telegram Channel >> https://t.me/Pmttg
