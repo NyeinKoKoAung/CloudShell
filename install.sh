@@ -31,7 +31,25 @@ servermessage="<h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>
 <h4><font color='cyan'><style='text-align:center'>
-↤↤↤↤↤ GCP SERVER BY ④ ⍤⃝✿④ ↦↦↦↦↦
+↤↤↤↤↤ GCP SERVER PREMIUM BY ↦↦↦↦↦
+</font></h4>
+<h4><font color='cyan'><style='text-align:center'>
+░░██╗██╗░█████╗░░░██╗██╗
+</font></h4>
+<h4><font color='cyan'><style='text-align:center'>
+░██╔╝██║██╔══██╗░██╔╝██║
+</font></h4>
+<h4><font color='cyan'><style='text-align:center'>
+██╔╝░██║██║░░██║██╔╝░██║
+</font></h4>
+<h4><font color='cyan'><style='text-align:center'>
+███████║██║░░██║███████║
+</font></h4>
+<h4><font color='cyan'><style='text-align:center'>
+╚════██║╚█████╔╝╚════██║
+</font></h4>
+<h4><font color='cyan'><style='text-align:center'>
+░░░░░╚═╝░╚════╝░░░░░░╚═╝
 </font></h4>
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
