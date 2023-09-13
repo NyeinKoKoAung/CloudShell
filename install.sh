@@ -28,7 +28,7 @@ echo "
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>
-<h4><font color='cyan'>
+<h4><font color='cyan'><h1 style="text-align: center;">
 ↤↤↤↤↤ GCP SERVER BY ④ ⍤⃝✿④ ↦↦↦↦↦
 </font></h4>
 <h3><font color='red'>
