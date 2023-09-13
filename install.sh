@@ -16,8 +16,8 @@ cyan='\e[96m'   #
 none='\e[0m'    #အရောင်မရှိ
 
 #Username နှင့် Password ပြောင်းရန်
-username="404"
-password="404"
+username="nkka"
+password="nkka"
 
 #SSH User Limit သတ်မှတ်ရန်
 sshlimiter="300"
