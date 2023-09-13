@@ -26,14 +26,8 @@ sshlimiter="300"
 final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
 
-#Font Size(Server message အရွယ်အစား)
-# h6 = စာလုံးအသေး , h4 = စာလုံးအလတ် , h3 = စာလုံးအကြီး
-
-[[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
-
-sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
-echo "
-<h3><font color='red'>
+#Server Message 💠
+servermessage="<h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>
 <h4><font color='cyan'><style='text-align:center'>
@@ -41,12 +35,19 @@ echo "
 </font></h4>
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
-</font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
+</font></h3>"
+#Font Size(Server message အရွယ်အစား)
+# h6 = စာလုံးအသေး , h4 = စာလုံးအလတ် , h3 = စာလုံးအကြီး
+
+[[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
+
+sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
+echo "$servermessage" | tee /etc/ssh/gcp_404 >/dev/null
 #useradd "$username" --shell=/bin/false -M
-useradd -e $username -M -s /bin/false -p $password $username >/dev/null# 2>&1 &
+useradd -e $final -M -s /bin/false -p $password $username >/dev/null# 2>&1 &
 #echo "$password" >/etc/VPSManager/senha/$username
 #echo "$password" >/etc/ssh/sshd_config/$username
-echo "$username $sshlimiter" >>/root/usuarios.db
+echo "$username" >>/root/usuarios.db
 echo "$username:$password" | chpasswd
 
 echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
