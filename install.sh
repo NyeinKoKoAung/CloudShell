@@ -30,26 +30,26 @@ dias="2"
 servermessage="<h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>
-<h4><font color='cyan'><style='text-align:center'>
-↤↤↤↤↤ GCP SERVER PREMIUM BY ↦↦↦↦↦
+<h4><font color='#F5FE00'><style='text-align:center'>
+↤↤↤↤↤  ۩ PREMIUM SEVER ۩ ↦↦↦↦↦
 </font></h4>
-<h4><font color='cyan'><style='text-align:center'>
-░░██╗██╗░█████╗░░░██╗██╗
+<h4><font color='#E51369'><style='text-align:center'>
+🦋 🦋 TERM OF SERVICE 🦋 🦋
 </font></h4>
-<h4><font color='cyan'><style='text-align:center'>
-░██╔╝██║██╔══██╗░██╔╝██║
+<h4><font color='#20CDCC'><style='text-align:center'>
+NO SPAM
 </font></h4>
-<h4><font color='cyan'><style='text-align:center'>
-██╔╝░██║██║░░██║██╔╝░██║
+<h4><font color='#10C7E5'><style='text-align:center'>
+NO DDOS
 </font></h4>
-<h4><font color='cyan'><style='text-align:center'>
-███████║██║░░██║███████║
+<h4><font color='#00C1FF'><style='text-align:center'>
+NO HACKING AND CARDING
 </font></h4>
-<h4><font color='cyan'><style='text-align:center'>
-╚════██║╚█████╔╝╚════██║
+<h4><font color='cyan'>
+Telegram Channel >> https://t.me/Pmttg
 </font></h4>
-<h4><font color='cyan'><style='text-align:center'>
-░░░░░╚═╝░╚════╝░░░░░░╚═╝
+<h4><font color='cyan'>
+Telegram Channel >> https://t.me/nkka_404
 </font></h4>
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
@@ -59,6 +59,7 @@ servermessage="<h3><font color='red'>
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "$servermessage" | tee /etc/ssh/gcp_404 >/dev/null
+[[ ${username} != ?(+|-)+([a-zA-Z0-9]) ]]
 #ဒါက xင်ယားလို့ထည့်ထားတာ 🥵
 final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
@@ -71,6 +72,11 @@ echo "$password" >/etc/$username
 echo "$username:$password" | chpasswd
 echo "$username $sshlimiter" >>/root/usuarios.db
 IP=$(wget -qO- ipv4.icanhazip.com)
+echo ""
+echo -e "\033[1;32m===================================="
+echo -e "\033[1;32m   🌺ㅤONLY/:FORYOU&ALLㅤ🌺  " 
+echo -e "\033[1;32m===================================="
+echo ""
 echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
 echo ""
 echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP"
