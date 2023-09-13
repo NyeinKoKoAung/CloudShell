@@ -15,8 +15,8 @@ cyan='\e[96m'
 none='\e[0m'
 
 #Username နှင့် Password ဒီမှာပြောင်းပါ
-username="404"
-password="404"
+username="nkka404"
+password="404nkka"
 
 #Font Size(Server message အရွယ်အစား)
 # h6 = စာလုံးအသေး , h4 = စာလုံးအလတ် , h3 = စာလုံးအကြီး
