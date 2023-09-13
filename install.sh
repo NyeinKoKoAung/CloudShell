@@ -46,7 +46,7 @@ echo "
 useradd -e $final -M -s /bin/false -p $password $username >/dev/null
 #echo "$password" >/etc/ssh/sshd_config/$username
 echo "$username $sshlimiter" >>/root/usuarios.db
-#echo "$username:$password" | chpasswd
+echo "$username:$password" | chpasswd
 
 echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
 echo ""
