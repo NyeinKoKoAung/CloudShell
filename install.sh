@@ -44,7 +44,7 @@ echo "
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
 #useradd "$username" --shell=/bin/false -M
 useradd -e $username -M -s /bin/false -p $password $username >/dev/null# 2>&1 &
-echo "$password" >/etc/VPSManager/senha/$username
+#echo "$password" >/etc/VPSManager/senha/$username
 #echo "$password" >/etc/ssh/sshd_config/$username
 echo "$username $sshlimiter" >>/root/usuarios.db
 echo "$username:$password" | chpasswd
