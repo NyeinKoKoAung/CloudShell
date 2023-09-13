@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IP=$(cat /etc/IP)
+#IP=$(cat /etc/IP)
 #IP2=$(curl -H "i-am-404" http://metadata/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip)
 plain='\033[0m'
 
@@ -34,15 +34,15 @@ echo "
 <h3><font color='red'>
 ▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
-#useradd "404" --shell=/bin/false -M
-useradd -e 404 -M -s /bin/false -p $password $username >/dev/null
+useradd "$username" --shell=/bin/false -M
+#useradd -e 404 -M -s /bin/false -p $password $username >/dev/null
 #echo "$password" >/etc/ssh/sshd_config/$username
 #echo "$username" >>/root/usuarios.db
 echo "$username:$password" | chpasswd
 
 echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
 echo ""
-echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP"
+echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31mIP 🥵"
 echo -e "\033[1;32m◈ Port        :⪧  \033[1;31m22"
 echo -e "\033[1;32m◈ Username    :⪧  \033[1;31m$username"
 echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$password"
