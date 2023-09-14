@@ -12,7 +12,7 @@ machine="e2-medium"
 # if [[ -n $1 ]] && [[ $2 == e2-* ]] && [[ -n $3 ]] && [[ -n $4 ]] && [[ -n $8 ]] && [[ $(($(date +%s) - $8)) -lt 120 ]] && [[ $(($(date +%s) - $8)) -ge 0 ]]; then
 #if [[ -n cluster-404-m ]] && [[ $2 == e2-standard-4 ]] && [[ -n asia-southeast1-b ]] && [[ -n firewall ]] && [[ -n 404 ]] && [[ $(($(date +%s) - 404)) -lt 120 ]] && [[ $(($(date +%s) - 404)) -ge 0 ]]; then
 echo -e "${yellow}Creating instance ... 🤪${plain}"
-gcloud beta container clusters create "cluster-1" --zone "$zone" --no-enable-basic-auth --cluster-version "1.27.3-gke.100" --release-channel "regular" --machine-type "$machine" --image-type "UBUNTU_CONTAINERD" --disk-type "pd-balanced" --disk-size "100" --metadata disable-legacy-endpoints=true --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "1" --enable-ip-alias --network "global/networks/default" --subnetwork "regions/$region/subnetworks/default" --no-enable-intra-node-visibility --default-max-pods-per-node "110" --security-posture=disabled --workload-vulnerability-scanning=disabled --no-enable-master-authorized-networks --addons HorizontalPodAutoscaling,HttpLoadBalancing --enable-autoupgrade --enable-autorepair --max-surge-upgrade 1 --max-unavailable-upgrade 0 --binauthz-evaluation-mode​=disabled --no-enable-managed-prometheus --node-locations "$zone"
+gcloud beta container clusters create "cluster-1" --zone "$zone" --no-enable-basic-auth --cluster-version "1.27.3-gke.100" --release-channel "regular" --machine-type "$machine" --image-type "UBUNTU_CONTAINERD" --disk-type "pd-balanced" --disk-size "100" --metadata disable-legacy-endpoints=true --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "1" --enable-ip-alias --network "global/networks/default" --subnetwork "regions/$region/subnetworks/default" --no-enable-intra-node-visibility --default-max-pods-per-node "110" --security-posture=disabled --workload-vulnerability-scanning=disabled --no-enable-master-authorized-networks --addons HorizontalPodAutoscaling,HttpLoadBalancing --enable-autoupgrade --enable-autorepair --max-surge-upgrade 1 --max-unavailable-upgrade 0 --no-enable-managed-prometheus --node-locations "$zone"
 #echo -e "${yellow}Creating instance ...${plain}"
 #instance=$(gcloud dataproc clusters create cluster-404 --region asia-southeast1 --zone asia-southeast1-c --master-machine-type n2d-standard-2 --master-boot-disk-size 250 --num-workers 2 --worker-machine-type n2d-standard-2 --worker-boot-disk-size 250 --image-version 2.1-ubuntu20)
 echo -e "${green}Instance created. 🥵${plain}"
@@ -32,9 +32,9 @@ echo -e "\n${red}GCP SINGAPORE SERVER 😎${plain}\n"
 
 #echo -e "Username: ${green}nkka404${plain}, Password: ${green}nkka404${plain}, SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
 #echo -e "SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"echo ""
-echo "${red}------------------------------------${plain}"
+echo -e "${red}------------------------------------${plain}"
 printf "  Proudly developed the script by  \n"
-echo "${red}------------------------------------${plain}"
+echo -e "${red}------------------------------------${plain}"
 echo ""
 echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
 echo -e "${cyan} ___   ___          ________          ___   ___                              ${plain}"
