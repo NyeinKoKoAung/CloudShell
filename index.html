@@ -163,9 +163,9 @@
             </div>
         </div>
 
-        <div class="col-6 col-sm-6 col-md-6 col-lg-2">
-            <label for="region" class="form-label">Region</label>
-            <select id="region" class="form-select" aria-label="Region">
+        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+            <label for="edtFirewallName" class="form-label">Region</label>
+            <select id="edtFirewallName" class="form-select" aria-label="Region">
                 <option value="asia-east1-b">Taiwan (asia-east1)</option>
                 <option selected value="asia-southeast1-b">Singapore (asia-southeast1)</option>
                 <option value="asia-east1-b">Mumbai (asia-south1)</option>
@@ -287,7 +287,7 @@
     const instanceName = document.getElementById("edtInstanceName");
     const machineType = document.getElementById("machineType");
     const regionZone = document.getElementById("regionZone");
-    const region = document.getElementById("region");
+    const firewallName = document.getElementById("edtFirewallName");
     const username = document.getElementById("edtUsername");
     const password = document.getElementById("edtPassword");
     const message = document.getElementById("edtMessage");
@@ -307,13 +307,13 @@
         generateShellCode();
     }
 
-    function generateInstanceCodes(instanceName, machineType, regionZone, region, username, password, serverMessage) {
-        return "bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/v4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{region}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
+    function generateInstanceCodes(instanceName, machineType, regionZone, firewallName, username, password, serverMessage) {
+        return "bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/v4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
             .formatUnicorn({
                 instanceName: instanceName,
                 machineType: machineType,
                 regionZone: regionZone,
-                region: region,
+                firewallName: firewallName,
                 username: username,
                 password: password,
                 serverMessage: serverMessage,
@@ -326,7 +326,7 @@
             instanceName.value.replace(/\s+/g, '-'),
             machineType.value,
             regionZone.value,
-            region.value,
+            firewallName.value,
             username.value.replace(/\s+/g, '-'),
             password.value,
             message.value.replace(/"/g, '\\"').trim()
