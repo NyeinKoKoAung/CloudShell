@@ -56,9 +56,9 @@ echo ""
 echo -e "\033[1;37m◈────⪧ ✿ ✿ 4▪0▪4 ✿ ✿ ⪦────◈"
 echo ""
 
-else
-  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
-fi
+#else
+#echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
+#fi
 
 echo ""
 echo -e "${yellow}------------------------------------${plain}"
