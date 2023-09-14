@@ -59,7 +59,7 @@ Telegram Channel >> https://t.me/nkka_404
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "$servermessage" | tee /etc/ssh/gcp_404 >/dev/null
-[[ ${username} != ?(+|-)+([a-zA-Z0-9]) ]]
+${username} != ?(+|-)+([a-zA-Z0-9])
 #ဒါက xင်ယားလို့ထည့်ထားတာ 🥵
 final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
