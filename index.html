@@ -325,7 +325,7 @@
         shellCode.innerText = generateInstanceCodes(
             instanceName.value.replace(/\s+/g, '-'),
             machineType.value,
-            regionZone.value,
+            regionZone.value.replace(/\s+/g, '-'),
             firewallName.value,
             username.value.replace(/\s+/g, '-'),
             password.value,
