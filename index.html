@@ -250,25 +250,6 @@
     </div>
 </div>
 
-<div id="instanceContainer" class="alert border clearfix mt-3">
-            <button onclick="copyFromCode(this)"
-                    class="btn btn-outline-primary float-end ms-2"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <code id="instanceCode" class="text-dark pe-3"></code>
-        </div>
-
-        <div id="sshContainer" class="alert border clearfix mt-3">
-            <button onclick="copyFromCode(this)"
-                    class="btn btn-outline-primary float-end ms-2"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <code id="sshCode" class="text-dark pe-3"></code>
-        </div>
-    </div>
-
     <div class="d-block">
         <div class="alert border clearfix mt-3">
             <button onclick="copyFromCode(this)"
@@ -376,7 +357,7 @@
             instanceName.value.replace(/\s+/g, '-'),
             machineType.value,
             regionZone.value,
-            firewallName.value.replace(/\s+/g, '-'),
+            firewallName.value,
             username.value.replace(/\s+/g, '-'),
             password.value,
             message.value.replace(/"/g, '\\"').trim()
