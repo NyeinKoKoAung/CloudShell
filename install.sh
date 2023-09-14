@@ -13,8 +13,8 @@ cyan='\e[96m'   #စိမ်းပြာရောင်
 none='\e[0m'    #အရောင်မရှိ
 
 #Username နှင့် Password ပြောင်းရန်
-username="iam404"
-password="iam404"
+username="404"
+password="404"
 
 #SSH USER LIMIT သတ်မှတ်ရန်
 sshlimiter="300"
