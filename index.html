@@ -152,7 +152,7 @@
         <div class="col-6 col-sm-6 col-md-3 col-lg-2">
             <label for="edtInstanceName" class="form-label">Instance name</label>
             <div class="input-group">
-                <input spellcheck="false" value="instance-1" type="text" class="form-control" id="edtInstanceName"
+                <input spellcheck="false" value="cluster-1" type="text" class="form-control" id="edtInstanceName"
                        placeholder="instance-1">
                 <div class="input-group-append">
                         <span style="border-top-left-radius: 0; border-bottom-left-radius: 0"
@@ -163,18 +163,16 @@
             </div>
         </div>
 
-        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-            <label for="edtFirewallName" class="form-label">Firewall name</label>
-            <div class="input-group">
-                <input spellcheck="false" value="firewall" type="text" class="form-control" id="edtFirewallName"
-                       placeholder="firewall">
-                <div class="input-group-append">
-                        <span style="border-top-left-radius: 0; border-bottom-left-radius: 0"
-                              onclick="generateRandomStr(document.getElementById('edtFirewallName'))"
-                              class="input-group-text btn btn-primary"
-                        ><i class="bi bi-shuffle"></i></span>
-                </div>
-            </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-2">
+            <label for="region" class="form-label">Region</label>
+            <select id="region" class="form-select" aria-label="Region">
+                <option value="asia-east1-b">Taiwan (asia-east1)</option>
+                <option selected value="asia-southeast1-b">Singapore (asia-southeast1)</option>
+                <option value="asia-east1-b">Mumbai (asia-south1)</option>
+                <option value="asia-east1-b">Japan (asia-northeast1)</option>
+                <option value="us-central1-c">US Central (us-central1)</option>
+                <option value="us-west1-b">Oregon (us-west1)</option>
+            </select>
         </div>
 
         <div class="col-6 col-md-3 col-lg-2">
@@ -208,8 +206,8 @@
         </div>
 
         <div class="col-6 col-sm-6 col-md-6 col-lg-2">
-            <label for="regionZone" class="form-label">Region zone</label>
-            <select id="regionZone" class="form-select" aria-label="Region zone">
+            <label for="regionZone" class="form-label">Zone</label>
+            <select id="regionZone" class="form-select" aria-label="Zone">
                 <option value="asia-east1-b">Taiwan (asia-east1-b)</option>
                 <option value="asia-east1-a">Taiwan (asia-east1-a)</option>
                 <option value="asia-east1-c">Taiwan (asia-east1-c)</option>
@@ -289,7 +287,7 @@
     const instanceName = document.getElementById("edtInstanceName");
     const machineType = document.getElementById("machineType");
     const regionZone = document.getElementById("regionZone");
-    const firewallName = document.getElementById("edtFirewallName");
+    const region = document.getElementById("region");
     const username = document.getElementById("edtUsername");
     const password = document.getElementById("edtPassword");
     const message = document.getElementById("edtMessage");
@@ -309,13 +307,13 @@
         generateShellCode();
     }
 
-    function generateInstanceCodes(instanceName, machineType, regionZone, firewallName, username, password, serverMessage) {
-        return "bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/v4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
+    function generateInstanceCodes(instanceName, machineType, regionZone, region, username, password, serverMessage) {
+        return "bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/v4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{region}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
             .formatUnicorn({
                 instanceName: instanceName,
                 machineType: machineType,
                 regionZone: regionZone,
-                firewallName: firewallName,
+                region: region,
                 username: username,
                 password: password,
                 serverMessage: serverMessage,
@@ -328,7 +326,7 @@
             instanceName.value.replace(/\s+/g, '-'),
             machineType.value,
             regionZone.value,
-            firewallName.value.replace(/\s+/g, '-'),
+            region.value,
             username.value.replace(/\s+/g, '-'),
             password.value,
             message.value.replace(/"/g, '\\"').trim()
