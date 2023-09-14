@@ -1,13 +1,17 @@
-# GCP-CloudShell
+# GCP-CloudShell & Script By ④ ⍤⃝✿④
 
-Just copy the script and run. 🥳
+Just Copy The Script And Run...🥰
 
+##
+```
+https://nyeinkokoaung.github.io/CloudShell
+```
 ## ㅤ
 
-___Update System Packages and Install SCRIPT___
+# SSH SCRIPT
 
 ```
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/NyeinKoKo/DRAGON-VPS-MANAGER/main/hehe; chmod 777 hehe;./hehe
+wget https://raw.githubusercontent.com/NyeinKoKo/DRAGON-VPS-MANAGER/main/hehe; chmod 777 hehe;./hehe
 
 ```
 ## ㅤ
