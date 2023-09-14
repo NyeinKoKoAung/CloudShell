@@ -216,6 +216,12 @@
                 <option selected value="asia-southeast1-b">Singapore (asia-southeast1-b)</option>
                 <option value="asia-southeast1-a">Singapore (asia-southeast1-a)</option>
                 <option value="asia-southeast1-c">Singapore (asia-southeast1-c)</option>
+                <option value="asia-east1-b">Mumbai (asia-south1-b)</option>
+                <option value="asia-east1-a">Mumbai (asia-south1-a)</option>
+                <option value="asia-east1-c">Mumbai (asia-south1-c)</option>
+                <option value="asia-east1-b">Japan (asia-northeast1-b)</option>
+                <option value="asia-east1-a">Japan (asia-northeast1-a)</option>
+                <option value="asia-east1-c">Japan (asia-northeast1-c)</option>
                 <option value="us-central1-c">US Central (us-central1-c)</option>
                 <option value="us-central1-a">US Central (us-central1-a)</option>
                 <option value="us-central1-f">US Central (us-central1-f)</option>
@@ -304,7 +310,7 @@
     }
 
     function generateInstanceCodes(instanceName, machineType, regionZone, firewallName, username, password, serverMessage) {
-        return "bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
+        return "bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/v4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
             .formatUnicorn({
                 instanceName: instanceName,
                 machineType: machineType,
