@@ -13,8 +13,8 @@ cyan='\e[96m'   #စိမ်းပြာရောင်
 none='\e[0m'    #အရောင်မရှိ
 
 #Username နှင့် Password ပြောင်းရန်
-username="4ZERO4"
-password="4ZERO4"
+username="404"
+password="404"
 
 #SSH USER LIMIT သတ်မှတ်ရန်
 sshlimiter="300"
@@ -60,6 +60,11 @@ Telegram Channel >> https://t.me/nkka_404
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "$servermessage" | tee /etc/ssh/gcp_404 >/dev/null
 #${username} != ?(+|-)+([a-zA-Z0-9])
+sizepass=$(echo ${#password})
+[[ $sizepass -lt 3 ]] && {
+	echo -e "\n${cor1}Short password!, use at least 3 characters${scor}\n"
+	exit 1
+}
 #ဒါက xင်ယားလို့ထည့်ထားတာ 🥵
 final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
