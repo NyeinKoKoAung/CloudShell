@@ -2,7 +2,7 @@
 
 Just Copy The Script And Run...🥰
 
-##
+# Qwiklab Script Panel
 ```
 https://nyeinkokoaung.github.io/CloudShell
 ```
@@ -11,7 +11,7 @@ https://nyeinkokoaung.github.io/CloudShell
 # SSH SCRIPT
 
 ```
-wget https://raw.githubusercontent.com/NyeinKoKo/DRAGON-VPS-MANAGER/main/hehe; chmod 777 hehe;./hehe
+wget https://raw.githubusercontent.com/NyeinKoKoAung/ONLY-FORYOU-ALL/main/hehe; chmod 777 hehe;./hehe
 
 ```
 ## ㅤ
