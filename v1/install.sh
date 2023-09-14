@@ -1,10 +1,22 @@
 #!/bin/bash
 
-red='\x1b[31;1m'
-yellow='\x1b[33;1m'
-green='\x1b[32;1m'
 plain='\033[0m'
 
+#စာလုံးအရောင်များ(Server Message)
+red='\e[31m'    #အနီရောင်
+yellow='\e[33m' #အဝါရောင်
+gray='\e[90m'   #မီးခိုးရောင်
+green='\e[92m'  #အစိမ်းရောင်
+blue='\e[94m'   #အပြာရောင်
+magenta='\e[95m'#ပန်းခရမ်းရောင်
+cyan='\e[96m'   #စိမ်းပြာရောင်
+none='\e[0m'    #အရောင်မရှိ
+
+#SSH USER LIMIT သတ်မှတ်ရန်
+sshlimiter="300"
+
+#ရက်ကန့်သက်ရန်(Qwiklab အတွက်မို့ 2-DAY ပုံသေထားရပါသည်)
+dias="2"
 # $1: username, $2: password, $3: message, $4: token
 
 # check root
@@ -12,28 +24,52 @@ plain='\033[0m'
 
 if [[ -n $4 ]] && [[ $(($(date +%s) - $4)) -lt 120 ]] && [[ $(($(date +%s) - $4)) -ge 0 ]]; then
 
-sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_ready/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
-echo "$3" | tee /etc/ssh/gcp_ready >/dev/null
-useradd "$1" --shell=/bin/false -M
+sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
+echo "$3" | tee /etc/ssh/gcp_404 >/dev/null
+final=$(date "+%Y-%m-%d" -d "+$dias days")
+gui=$(date "+%d/%m/%Y" -d "+$dias days")
+pass=$(perl -e 'print crypt($ARGV[0], "password")' $2)
+useradd -e $final -M -s /bin/false -p $pass $1 >/dev/null
+echo "$2" >/etc/$1
 echo "$1:$2" | chpasswd
+echo "$1 $sshlimiter" >>/root/usuarios.db
+IP=$(wget -qO- ipv4.icanhazip.com)
+echo ""
+echo -e "\033[1;32m===================================="
+echo -e "\033[1;32m   🌺ㅤONLY/:FORYOU&ALLㅤ🌺  " 
+echo -e "\033[1;32m===================================="
+echo ""
+echo -e "\033[1;37m◈─────⪧ SSH ACCOUNT ⪦─────◈"
+echo ""
+echo -e "\033[1;32m◈ Host / IP   :⪧  \033[1;31m$IP"
+echo -e "\033[1;32m◈ Port        :⪧  \033[1;31m22"
+echo -e "\033[1;32m◈ Username    :⪧  \033[1;31m$1"
+echo -e "\033[1;32m◈ Password    :⪧  \033[1;31m$2"
+echo -e "\033[1;32m◈ Login Limit :⪧  \033[1;31m$sshlimiter"
+echo -e "\033[1;32m◈ Expire Date :⪧  \033[1;31m$gui"
+echo ""
+echo -e "\033[1;37m◈────⪧ ✿ ✿ 4▪0▪4 ✿ ✿ ⪦────◈"
+echo ""
 
 else
-  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/kaungkhantx for more information.${plain}"
+  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
 fi
 
 echo ""
-echo "------------------------------------"
-printf "  Proudly developed the script by  \n"
-echo "------------------------------------"
+echo -e "${yellow}------------------------------------${plain}"
+printf "Developed the script by \n"
+echo -e "${yellow}------------------------------------${plain}"
 echo ""
 
-echo -e "${yellow}
- _  __                         _  ___                 _     _  __
-| |/ /                        | |/ / |               | |   | |/ /
-| ' / __ _ _   _ _ __   __ _  | ' /| |__   __ _ _ __ | |_  | ' /_   _  __ ___      __
-|  < / _\` | | | | '_ \ / _\` | |  < | '_ \ / _\` | '_ \| __| |  <| | | |/ _\` \ \ /\ / /
-| . \ (_| | |_| | | | | (_| | | . \| | | | (_| | | | | |_  | . \ |_| | (_| |\ V  V /
-|_|\_\__,_|\__,_|_| |_|\__, | |_|\_\_| |_|\__,_|_| |_|\__| |_|\_\__, |\__,_| \_/\_/  ${plain}(ɔ◔‿◔)ɔ ${red}♥${yellow}
-                        __/ |                                    __/ |
-                       |___/                                    |___/ ${green}https://t.me/kaungkhantx${plain}
-"
+echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
+echo -e "${cyan} ___   ___          ________          ___   ___                               ${plain}"
+echo -e "${cyan}|\  \ |\  \        |\   __  \        |\  \ |\  \                              ${plain}"
+echo -e "${cyan}\ \  \|_\  \       \ \  \|\  \       \ \  \|_\  \                             ${plain}"
+echo -e "${cyan} \ \______  \       \ \  \/\  \       \ \______  \                            ${plain}"
+echo -e "${cyan}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                           ${plain}"
+echo -e "${cyan}         \ \__\       \ \_______\             \ \__\                          ${plain}"
+echo -e "${cyan}          \|__|        \|_______|              \|__|                          ${plain}"
+echo -e "${green}Contact the developer https://t.me/nkka404 for more information              ${plain}"
+echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
+
+echo -e "${cyan}i am 404 😎 ${plain}"
