@@ -308,7 +308,7 @@
     }
 
     function generateInstanceCodes(instanceName, machineType, regionZone, firewallName, username, password, serverMessage) {
-        return "bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/v4/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
+        return "bash <(curl -Ls https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/v1/create_instance.sh) \"{instanceName}\" \"{machineType}\" \"{regionZone}\" \"{firewallName}\" \"{username}\" \"{password}\" \"{serverMessage}\" \"{token}\""
             .formatUnicorn({
                 instanceName: instanceName,
                 machineType: machineType,
