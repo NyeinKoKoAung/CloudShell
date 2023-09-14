@@ -44,11 +44,10 @@ echo -e "${cyan} \ \______  \       \ \  \/\  \       \ \______  \              
 echo -e "${cyan}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                           ${plain}"
 echo -e "${cyan}         \ \__\       \ \_______\             \ \__\                          ${plain}"
 echo -e "${cyan}          \|__|        \|_______|              \|__|                          ${plain}"
-echo -e "${green}Contact the developer https://t.me/nkka404 for more information              ${plain}"
 echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
 
 echo -e "${cyan}i am 404 😎 ${plain}"
 
 else
-  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/kaungkhantx for more information.${plain}"
+  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
 fi
