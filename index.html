@@ -250,6 +250,56 @@
     </div>
 </div>
 
+<div id="instanceContainer" class="alert border clearfix mt-3">
+            <button onclick="copyFromCode(this)"
+                    class="btn btn-outline-primary float-end ms-2"
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+                <i class="bi bi-clipboard"></i>
+            </button>
+            <code id="instanceCode" class="text-dark pe-3"></code>
+        </div>
+
+        <div id="sshContainer" class="alert border clearfix mt-3">
+            <button onclick="copyFromCode(this)"
+                    class="btn btn-outline-primary float-end ms-2"
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+                <i class="bi bi-clipboard"></i>
+            </button>
+            <code id="sshCode" class="text-dark pe-3"></code>
+        </div>
+    </div>
+
+    <div class="d-block">
+        <div class="alert border clearfix mt-3">
+            <button onclick="copyFromCode(this)"
+                    class="btn btn-outline-primary float-end ms-2"
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+                <i class="bi bi-clipboard"></i>
+            </button>
+            <code class="text-dark pe-3">sudo su</code>
+        </div>
+
+        <div class="alert border clearfix mt-3">
+            <button onclick="copyFromCode(this)"
+                    class="btn btn-outline-primary float-end ms-2"
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+                <i class="bi bi-clipboard"></i>
+            </button>
+            <code class="text-dark pe-3">bash <(curl -Ls 
+                https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/install.sh)</code>
+        </div>
+
+        <div class="mt-3 alert alert-primary">
+            <h6>Task 2. Install an NGINX</h6>
+            <span>press Check my progress button</span><br><br>
+            <h6>Task 3. Create a new instance</h6>
+            <span>press Check my progress button</span><br><br>
+            <h6>Task 4. Test your knowledge</h6>
+            <span>Check all and submit.</span>
+        </div>
+    </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/gh/PrismJS/prism@1.29.0/components/prism-core.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/PrismJS/prism@1.29.0/components/prism-bash.min.js"></script>
 
@@ -376,57 +426,6 @@
 
             return str;
         };
-    
-
-        <div id="instanceContainer" class="alert border clearfix mt-3">
-            <button onclick="copyFromCode(this)"
-                    class="btn btn-outline-primary float-end ms-2"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <code id="instanceCode" class="text-dark pe-3"></code>
-        </div>
-
-        <div id="sshContainer" class="alert border clearfix mt-3">
-            <button onclick="copyFromCode(this)"
-                    class="btn btn-outline-primary float-end ms-2"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <code id="sshCode" class="text-dark pe-3"></code>
-        </div>
-    </div>
-
-    <div class="d-block">
-        <div class="alert border clearfix mt-3">
-            <button onclick="copyFromCode(this)"
-                    class="btn btn-outline-primary float-end ms-2"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <code class="text-dark pe-3">sudo su</code>
-        </div>
-
-        <div class="alert border clearfix mt-3">
-            <button onclick="copyFromCode(this)"
-                    class="btn btn-outline-primary float-end ms-2"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <code class="text-dark pe-3">bash <(curl -Ls 
-                https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/install.sh)</code>
-        </div>
-
-        <div class="mt-3 alert alert-primary">
-            <h6>Task 2. Install an NGINX</h6>
-            <span>press Check my progress button</span><br><br>
-            <h6>Task 3. Create a new instance</h6>
-            <span>press Check my progress button</span><br><br>
-            <h6>Task 4. Test your knowledge</h6>
-            <span>Check all and submit.</span>
-        </div>
-    </div>
-</div>
 
 
 </script>
