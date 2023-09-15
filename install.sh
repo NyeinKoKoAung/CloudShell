@@ -39,12 +39,12 @@ servermessage="<h3><font color="red">▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "$servermessage" | tee /etc/ssh/gcp_404 >/dev/null
-${username} != ?(+|-)+([a-zA-Z0-9])
-#sizepass=$(echo ${#password})
-#[[ $sizepass -lt 3 ]] && {
-	#echo -e "\n${cor1}Short password!, use at least 3 characters${scor}\n"
-	#exit 1
-#}
+sizemin=$(echo ${#username})
+[[ $sizemin -lt 2 ]] && {
+	echo -e "\n${cor1}You entered too short a username${scor}"
+	echo -e "${cor1}use at least 4 characters!${scor}\n"
+	exit 1
+}
 #ဒါက xင်ယားလို့ထည့်ထားတာ 🥵
 final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
