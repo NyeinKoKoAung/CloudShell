@@ -13,7 +13,7 @@ cyan='\e[96m'   #စိမ်းပြာရောင်
 none='\e[0m'    #အရောင်မရှိ
 
 #Username နှင့် Password ပြောင်းရန်
-username="404"
+username="nkka"
 password="404"
 
 #SSH USER LIMIT သတ်မှတ်ရန်
@@ -28,11 +28,12 @@ dias="2"
 # h4 သည် = စာလုံးအလတ် ဖြစ်သည်
 # h3 သည် = စာလုံးအကြီး  ဖြစ်သည်
 
-servermessage="<h3><font color="red">▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
+servermessage="
+<h3><font color="red">▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬
 </font></h3>
 <h3 style="text-align:center"><font color="magenta">--- ۩ SERVER BY 404 ۩ ---
 </font></h3>
-<h3><font color="red">▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
+<h3><font color="red">▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬
 </font></h3>"
 #End
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
