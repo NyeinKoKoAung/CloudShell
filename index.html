@@ -340,7 +340,7 @@
             instanceName.value.replace(/\s+/g, '-'),
             machineType.value,
             regionZone.value,
-            firewallName.value,
+            firewallName.value.replace(/\s+/g, '-'),
         );
 
         Prism.highlightElement(shellCode);
