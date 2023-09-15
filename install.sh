@@ -39,7 +39,7 @@ servermessage="
 ╚══°.¸.°[Khin Wint Wah]</font></h6>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 <h3 style="text-align:center"><font color="green">FOR ALL OF YOU</font></h3>
-<h4><font color="cyan">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
+<h4 style="text-align:right"><font color="cyan">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
 <h3 style="text-align:center"><font color="red">▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬</font></h3>"
 #End
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
