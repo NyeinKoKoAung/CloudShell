@@ -38,7 +38,7 @@ servermessage="
 ...(    ¡═══¡
 ☻/      ╚╗╔╝
 /▌♥♥  ╔╝(¯`v´¯)
-/ \ ♥♥╚══`.¸.°Khin Wint Wah°</font></h6>
+/ \ ♥♥╚══`.¸.°[Khin Wint Wah]</font></h6>
 
 <h3><font color="red">▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>"
