@@ -32,11 +32,11 @@ servermessage="
 <h3 style="text-align:center"><font color="red">▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬</font></h3>
 <h3 style="text-align:center"><font color="green">ONLY/:FORYOU&ALL</font></h3>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
-<h6 style="text-align:center"><font color="magenta">
-   ╔══╗                   ☻/
-    ╚╗╔╝                   /▌♥♥
-    ╔╝(¯°v°¯)              / \ ♥♥
-ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ╚══°.¸.°[Khin Wint Wah]ꔷꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈</font></h6>
+<h4 style="text-align:center"><font color="magenta">
+   ╔══╗
+    ╚╗╔╝
+    ╔╝(¯°v°¯)
+ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ╚══°.¸.°[Khin Wint Wah]ꔷꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈</font></h4>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 <h3 style="text-align:center"><font color="green">FOR ALL OF YOU</font></h3>
 <h4 style="text-align:right"><font color="cyan">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
