@@ -249,25 +249,6 @@
               style="background-color: transparent; font-family: monospace; word-wrap: break-word"></code>
     </div>
 </div>
-        <div class="alert border clearfix mt-3">
-            <button onclick="copyFromCode(this)"
-                    class="btn btn-outline-primary float-end ms-3"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <code class="text-dark pe-3">sudo su</code>
-        </div>
-
-        <div class="alert border clearfix mt-3">
-            <button onclick="copyFromCode(this)"
-                    class="btn btn-outline-primary float-end ms-3"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
-                <i class="bi bi-clipboard"></i>
-            </button>
-            <code class="text-dark pe-3">bash <(curl -Ls 
-                https://raw.githubusercontent.com/NyeinKoKoAung/CloudShell/main/install.sh)</code>
-        </div>
-
         <div class="mt-3 alert alert-primary">
             <h6>Task 2. How To Use</h6>
             <span>press Check my progress button</span><br><br>
@@ -341,9 +322,6 @@
                 machineType: machineType,
                 regionZone: regionZone,
                 firewallName: firewallName,
-                username: username,
-                password: password,
-                serverMessage: serverMessage,
                 token: Math.floor(Date.now() / 1000)
             })
     }
@@ -354,9 +332,6 @@
             machineType.value,
             regionZone.value,
             firewallName.value,
-            username.value.replace(/\s+/g, '-'),
-            password.value,
-            message.value.replace(/"/g, '\\"').trim()
         );
 
         Prism.highlightElement(shellCode);
