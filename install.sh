@@ -39,7 +39,7 @@ servermessage="
 ...(    ¡═══¡
 ☻/      ╚╗╔╝
 /▌♥♥  ╔╝(¯`v´¯)
-/ \ ♥♥╚══`.¸.°[Khin Wint Wah]</font></h6>
+/ \ ♥♥╚══°.¸.°[Khin Wint Wah]</font></h6>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 <h3 style="text-align:center"><font color="green">FOR ALL OF YOU</font></h3>
 <h4><font color="red">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
