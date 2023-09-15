@@ -38,8 +38,8 @@ servermessage="
 ...(    ¡═══¡
 ☻/      ╚╗╔╝
 /▌♥♥  ╔╝(¯`v´¯)
-/ \ ♥♥╚══`.¸.°Khin Wint Wah°
-</font></h6>
+/ \ ♥♥╚══`.¸.°Khin Wint Wah°</font></h6>
+
 <h3><font color="red">▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
 </font></h3>"
 #End
@@ -54,11 +54,11 @@ sizemin=$(echo ${#username})
 	exit 1
 }
 #ဒါက xင်ယားလို့ထည့်ထားတာ 🥵
-final=$(date "+%Y-%m-%d" -d "+$dias days")
+#final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
 pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
-#useradd "$username" --shell=/bin/false -M
-useradd -e $final -M -s /bin/false -p $pass $username >/dev/null #2>&1 &
+useradd "$username" --shell=/bin/false -M
+#useradd -e $final -M -s /bin/false -p $pass $username >/dev/null #2>&1 &
 #echo "$password" >/etc/VPSManager/senha/$username
 #echo "$password" >/etc/ssh/sshd_config/$username
 echo "$password" >/etc/$username
