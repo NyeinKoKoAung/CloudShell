@@ -13,8 +13,8 @@ cyan='\e[96m'   #စိမ်းပြာရောင်
 none='\e[0m'    #အရောင်မရှိ
 
 #Username နှင့် Password ပြောင်းရန်
-username="4zero4"
-password="4zero4"
+username="404"
+password="404"
 
 #SSH USER LIMIT သတ်မှတ်ရန်
 sshlimiter="300"
@@ -27,39 +27,19 @@ dias="2"
 # h6 သည် = စာလုံးအသေး ဖြစ်သည်
 # h4 သည် = စာလုံးအလတ် ဖြစ်သည်
 # h3 သည် = စာလုံးအကြီး  ဖြစ်သည်
-servermessage="<h3><font color='red'>
-▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
+
+servermessage="<h3><font color="red">▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>
-<h4><font color='#F5FE00'>
-↤↤↤↤↤  ۩ PREMIUM SEVER ۩ ↦↦↦↦↦
-</font></h4>
-<h4><font color='#E51369'>
-◈─────⪧ IMPORTANT ⪦──────◈
-</font></h4>
-<h4><font color='magenta'>
-         NO SPAM           
-</font></h4>
-<h4><font color='green'>
-         NO DDOS           
-</font></h4>
-<h4><font color='#00C1FF'>
-  NO HACKING AND CARDING   
-</font></h4>
-<h4><font color='cyan'>
-Telegram Channel >> https://t.me/Pmttg
-</font></h4>
-<h4><font color='cyan'>
-Telegram Channel >> https://t.me/nkka_404
-</font></h4>
-<h3><font color='red'>
-▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬
+<h3 style="text-align: center; "><font color="magenta">--- ۩ SERVER BY 404 ۩ ---
+</font></h3>
+<h3><font color="red">▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>"
 #End
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
 
 sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "$servermessage" | tee /etc/ssh/gcp_404 >/dev/null
-#${username} != ?(+|-)+([a-zA-Z0-9])
+${username} != ?(+|-)+([a-zA-Z0-9])
 #sizepass=$(echo ${#password})
 #[[ $sizepass -lt 3 ]] && {
 	#echo -e "\n${cor1}Short password!, use at least 3 characters${scor}\n"
@@ -74,7 +54,7 @@ useradd -e $final -M -s /bin/false -p $pass $username >/dev/null #2>&1 &
 #echo "$password" >/etc/VPSManager/senha/$username
 #echo "$password" >/etc/ssh/sshd_config/$username
 echo "$password" >/etc/$username
-echo "$username:$password" | chpasswd
+#echo "$username:$password" | chpasswd
 echo "$username $sshlimiter" >>/root/usuarios.db
 IP=$(wget -qO- ipv4.icanhazip.com)
 echo ""
