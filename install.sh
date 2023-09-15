@@ -33,8 +33,9 @@ servermessage="
 <h3 style="text-align:center"><font color="green">ONLY/:FORYOU&ALL</font></h3>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 <h6 style="text-align:center"><font color="magenta">
-..... (¯`v´¯)♥
-
+..... (¯°v°¯)♥
+.......•.¸.•
+....¸.•°
 ...(    ¡═══¡
 ☻/      ╚╗╔╝
 /▌♥♥  ╔╝(¯°v°¯)
