@@ -33,10 +33,10 @@ servermessage="
 <h3 style="text-align:center"><font color="green">ONLY/:FORYOU&ALL</font></h3>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 <h6 style="text-align:center"><font color="magenta">
-╔══╗
-╚╗╔╝
-╔╝(¯°v°¯)
-╚══°.¸.°[Khin Wint Wah]</font></h6>
+   ╔══╗                   ☻/
+    ╚╗╔╝                   /▌♥♥
+    ╔╝(¯°v°¯)              / \ ♥♥
+ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ╚══°.¸.°[Khin Wint Wah]ꔷꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈</font></h6>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 <h3 style="text-align:center"><font color="green">FOR ALL OF YOU</font></h3>
 <h4 style="text-align:right"><font color="cyan">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
@@ -53,11 +53,11 @@ sizemin=$(echo ${#username})
 	exit 1
 }
 #ဒါက xင်ယားလို့ထည့်ထားတာ 🥵
-#final=$(date "+%Y-%m-%d" -d "+$dias days")
+final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
 pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
-useradd "$username" --shell=/bin/false -M
-#useradd -e $final -M -s /bin/false -p $pass $username >/dev/null #2>&1 &
+#useradd "$username" --shell=/bin/false -M
+useradd -e $final -M -s /bin/false -p $pass $username >/dev/null #2>&1 &
 #echo "$password" >/etc/VPSManager/senha/$username
 #echo "$password" >/etc/ssh/sshd_config/$username
 echo "$password" >/etc/$username
