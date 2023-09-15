@@ -30,7 +30,7 @@ dias="2"
 
 servermessage="<h3><font color="red">▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>
-<h3 style="text-align: center; "><font color="magenta">--- ۩ SERVER BY 404 ۩ ---
+<h3 style="text-align:center"><font color="magenta">--- ۩ SERVER BY 404 ۩ ---
 </font></h3>
 <h3><font color="red">▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬
 </font></h3>"
