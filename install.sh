@@ -29,11 +29,18 @@ dias="2"
 # h3 သည် = စာလုံးအကြီး  ဖြစ်သည်
 
 servermessage="
-<h3><font color="red">▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬
+<h3><font color="red">▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬
 </font></h3>
-<h3 style="text-align:center"><font color="magenta">--- ۩ SERVER BY 404 ۩ ---
-</font></h3>
-<h3><font color="red">▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬
+<h6 style="text-align:center"><font color="magenta">
+..... (¯`v´¯)♥
+.......•.¸.•´
+....¸.•´GCP▬Server▬by▬④ ⍤⃝✿④
+...(    ¡═══¡
+☻/      ╚╗╔╝
+/▌♥♥  ╔╝(¯`v´¯)
+/ \ ♥♥╚══`.¸.[Khin Wint Wah]
+</font></h6>
+<h3><font color="red">▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬
 </font></h3>"
 #End
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
