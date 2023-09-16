@@ -34,10 +34,7 @@ servermessage="
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 
 <h4 style="text-align:center"><font color="magenta">
-
-̊̊  
-
-ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ̸̲̅ꔷ̸̲̲̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̲̅̅̅̅ꔷ̸̲̲̲̲̲̅̅̅̅̅ꔷ̸̲̲̲̲̅̅̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̅̅ꔷ̸̲̅ ꔷ̸̲̅ꔷ̸̲̅ꔷ̸̲̅[❣️Khin Wint Wah❣️]ꔷ̸̲̅ꔷ̸̲̅ꔷ̸̲̅ ꔷ̸̲̅ꔷ̸̲̲̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̲̅̅̅̅ꔷ̸̲̲̲̲̲̅̅̅̅̅ꔷ̸̲̲̲̲̅̅̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̅̅ꔷ̸̲̅ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇</font></h4>
+ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ✿ꔷ[❣️Khin Wint Wah❣️]ꔷ✿ꔷꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇</font></h4>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 
 <h4><font color="cyan">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
