@@ -13,7 +13,7 @@ cyan='\e[96m'   #စိမ်းပြာရောင်
 none='\e[0m'    #အရောင်မရှိ
 
 #Username နှင့် Password ပြောင်းရန်
-username="nkka"
+username="hello"
 password="404"
 
 #SSH USER LIMIT သတ်မှတ်ရန်
@@ -33,13 +33,14 @@ servermessage="
 <h3 style="text-align:center"><font color="green">ONLY/:FORYOU&ALL</font></h3>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 <h7 style="text-align:center"><font color="magenta">
-     ╔══╗
-     ╚╗╔╝
-     ╔╝(¯°v°¯)
-ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ̸̲̅ꔷ̸̲̲̅̅ꔷ̸̲̲̲̅̅̅ꔷ̅̅̅̅---°.¸.°[Khin Wint Wah]ꔷ̸̲̲̲̅̅̅̅ꔷ̸̲̲̲̲̲̅̅̅̅̅ꔷ̸̲̲̲̲̅̅̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̅̅ꔷ̸̲̅ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇</font></h7>
+
+ⵗⵗ̥̥̊̊ⵗ̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̥̥̥̥̥̊̊  ⵗ̥̥̥̥̥̥̥̥̥̥̥ⵗ̥̥̥̥̥̥̥̥̥̥̊̊ⵗ̥̥̥̥̥̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̊̊̊ⵗ̥̥̊̊
+
+ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ̸̲̅ꔷ̸̲̲̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̲̅̅̅̅ꔷ̸̲̲̲̲̲̅̅̅̅̅ꔷ̸̲̲̲̲̅̅̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̅̅ꔷ̸̲̅ ꔷ̸̲̅ꔷ̸̲̅ꔷ̸̲̅[Khin Wint Wah]ꔷ̸̲̅ꔷ̸̲̅ꔷ̸̲̅ ꔷ̸̲̅ꔷ̸̲̲̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̲̅̅̅̅ꔷ̸̲̲̲̲̲̅̅̅̅̅ꔷ̸̲̲̲̲̅̅̅̅ꔷ̸̲̲̲̅̅̅ꔷ̸̲̲̅̅ꔷ̸̲̅ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇
+</font></h7>
 <h3 style="text-align:center"><font color="green">══════════════</font></h3>
 <h3 style="text-align:center"><font color="green">FOR ALL OF YOU</font></h3>
-<h4 style="text-align:center""margin-left:275px"><font color="cyan">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
+<h4><font color="cyan">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
 <h3 style="text-align:center"><font color="red">▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬</font></h3>"
 #End
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
