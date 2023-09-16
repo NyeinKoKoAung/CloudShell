@@ -30,12 +30,12 @@ dias="2"
 
 servermessage="
 <h3 style="text-align:center"><font color="red">▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬</font></h3>
+<h3 style="text-align:center"><font color="green">═════════════</font></h3>
 <h3 style="text-align:center"><font color="green">ONLY/:FORYOU&ALL</font></h3>
-<h3 style="text-align:center"><font color="green">══════════════</font></h3>
 
 <h4 style="text-align:center"><font color="magenta">
-ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ✿ꔷ[❣️Khin Wint Wah❣️]ꔷ✿ꔷꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇</font></h4>
-<h3 style="text-align:center"><font color="green">══════════════</font></h3>
+ꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇ꔷ✿ꔷ[Khin Wint Wah belongs to Mg]ꔷ✿ꔷꕥ̈̈̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̈̎̊̇</font></h4>
+<h3 style="text-align:center"><font color="green">═════════════</font></h3>
 
 <h4><font color="cyan">GCP SERVER BY ④ ⍤⃝✿④</font></h4>
 <h3 style="text-align:center"><font color="red">▬▬▬▬▬▬▬▬✿4▪0▪4✿▬▬▬▬▬▬▬▬</font></h3>"
